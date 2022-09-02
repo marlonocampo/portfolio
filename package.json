@@ -1,0 +1,23 @@
+{
+  "name": "portafolio2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "11.10.4",
+    "@emotion/styled": "11.10.4",
+    "@mui/icons-material": "5.10.3",
+    "@mui/material": "5.10.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "vite": "3.0.9"
+  }
+}
