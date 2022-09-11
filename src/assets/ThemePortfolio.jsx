@@ -1,9 +1,11 @@
 import React from 'react';
 import { createTheme } from "@mui/material";
+import Overpass from "./Fonts/Overpass.ttf"
 
 export const temaGlobal = createTheme({
   typography: {
-    fontFamily: 'Quicksand',
+    fontFamily: "Overpass",
+    fontSize: 14
   },
   palette: {
     primary: {
@@ -20,16 +22,24 @@ export const temaGlobal = createTheme({
     }
   },
   components: {
-    MuiButton:{
-      styleOverrides:{
-        root:{
+    MuiButton: {
+      styleOverrides: {
+        root: {
           borderRadius: '20px',
-          margin: '2em'
+        }
+      }
+    },
+    MuiCssBaseline: {
+      styleOverrides: {
+        "@font-face": {
+          fontWeight: 400,
+          fontFamily: "Overpass",
+          src: `url(${Overpass}) format("truetype")`,
         }
       }
     }
   },
-  shape:{
+  shape: {
     borderRadius: 20
   }
 });

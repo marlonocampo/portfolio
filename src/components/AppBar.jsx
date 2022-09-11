@@ -4,154 +4,195 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import fotoPerfil from '../Assets/Images/PerfilMarlon.jpg';
-import { Box, Container, createTheme, Link, styled, ThemeProvider } from "@mui/material";
+import fotoPerfil from "../Assets/Images/PerfilMarlon.jpg";
+import {
+  Box,
+  Container,
+  createTheme,
+  CssBaseline,
+  Link,
+  styled,
+  ThemeProvider,
+} from "@mui/material";
 import GitHub from "@mui/icons-material/GitHub";
+import Overpass from "../assets/Fonts/Overpass.ttf";
+import MenuIcon from "@mui/icons-material/MenuRounded";
 
-const BotonPrincipal = styled(Link)({
+const BtHome = styled(Link)({
   fontSize: 14,
-  textDecoration: 'none',
-  fontWeight: 700,
-  color: 'rgba(255,255,255,0.8)',
-  transition: 'transform .3s',
+  textDecoration: "none",
+  fontWeight: 600,
+  color: "rgba(255,255,255,0.8)",
+  transition: "transform .3s",
   ":hover": {
-    transform: 'scale(1.1)',
-    color: '#fff',
+    transform: "scale(1.1)",
+    color: "#fff",
   },
   ":active": {
-    transform: 'scale(1.1)',
-    color: '#c2ffeb',
+    transform: "scale(1.1)",
+    color: "rgba(47,255,190,0.8)",
   },
-  background: 'none',
-  flexGrow: 0
-})
+  background: "none",
+  flexGrow: 0,
+});
 
 const BotonesLink = styled(Button)({
   borderRadius: 20,
-  color: 'rgba(255,255,255,0.8)',
-  margin: 'auto 1em',
+  color: "rgba(255,255,255,0.8)",
+  margin: "auto 1em",
   fontWeight: 500,
   ":hover": {
-    background: 'rgba(0,0,0,0)',
-    color: '#fff'
+    background: "rgba(0,0,0,0)",
+    color: "#fff",
   },
   ":hover:after": {
-    transform: 'scale(1,1)',
+    transform: "scale(1,1)",
   },
   ":after": {
     content: '""',
-    position: 'absolute',
-    width: '100%',
-    height: '0.2rem',
+    position: "absolute",
+    width: "100%",
+    height: "0.2rem",
     left: 0,
     bottom: 0,
-    background: 'rgba(47,255,190,0.8)',
+    background: "rgba(47,255,190,0.8)",
     borderRadius: 20,
-    transform: 'scale(0,1)',
-    transition: 'transform 0.2s ease'
+    transform: "scale(0,1)",
+    transition: "transform 0.2s ease",
   },
   ":active": {
-    color: 'rgba(47,255,190,0.8)',
-    background: 'rgba(0,0,0,0)',
-    boxShadow: 'none'
-  }
-})
+    color: "rgba(47,255,190,0.8)",
+    background: "rgba(0,0,0,0)",
+    boxShadow: "none",
+  },
+});
 
 const temaAppbar = createTheme({
   palette: {
     primary: {
-      main: '#11141BFF'
+      main: "#11141BFF",
     },
     secondary: {
-      main: 'rgba(47,255,190,0.8)',
-    }
+      main: "rgba(47,255,190,0.8)",
+    },
   },
   typography: {
+    fontFamily: "Overpass",
     fontSize: 14,
-    fontFamily: 'Quicksand, Overpass Mono',
     fontWeightRegular: 400,
     fontWeightBold: 500,
     button: {
-      textTransform: 'capitalize'
-    }
+      textTransform: "capitalize",
+    },
   },
   components: {
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backdropFilter: 'blur(5px)',
-          color: '#f2f4ff',
-          boxShadow: 'none',
-        }
-      }
+          backdropFilter: "blur(5px)",
+          color: "#f2f4ff",
+          boxShadow: "none",
+        },
+      },
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: '20px',
+          borderRadius: "20px",
           overflow: "visible",
-          minWidth: 'min-content'
-        }
-      }
-    }
-  }
-})
+        },
+      },
+    },
+    MuiCssBaseline: {
+      styleOverrides: {
+        "@font-face": {
+          fontWeight: 300,
+          fontFamily: "Overpass",
+          src: `url(${Overpass}) format("truetype")`,
+        },
+      },
+    },
+  },
+});
 
 export function AppBar1() {
   return (
     <ThemeProvider theme={temaAppbar}>
-      <AppBar color={'transparent'}>
-        <Container maxWidth={'md'}>
-          <Toolbar sx={{margin: '0em 3em'}}>
-            <BotonPrincipal href="#">
-              Marlon Pérez
-            </BotonPrincipal>
-            <Box sx={{display: 'flex', justifyContent: 'center', flexGrow: 2}}>
-              <BotonesLink disableRipple>
-                Inicio
-              </BotonesLink>
-              <BotonesLink disableRipple>
-                Servicios
-              </BotonesLink>
-              <BotonesLink disableRipple>
-                Acerca de mi
-              </BotonesLink>
+      <CssBaseline />
+      <AppBar color={"transparent"}>
+        <Container maxWidth={"md"}>
+          <Toolbar sx={{ paddingX: 0 }}>
+            <Box sx={{ display: { sm: "flex", md: "none" } }}>
+              <IconButton color={"secondary"}>
+                <MenuIcon />
+              </IconButton>
             </Box>
-            <Button
+            <Box
               sx={{
-                ":hover": {
-                  boxShadow: '1px 1px 5px 5px rgba(47,255,190,0.3)',
-                  color: '#ffff'
-                }
+                flexGrow: 1,
+                display: "flex",
+                justifyContent: "flex-start",
               }}
-              variant={'contained'}
-              color={'secondary'}
-              size={'small'}
-
             >
-              Contáctame
-            </Button>
-            <IconButton>
-              <GitHub sx={{
-                width: '1em',
-                height: '1em',
-                color: '#f2f4ff',
-                ":hover": {
-                  boxShadow: '15px #20d09b',
-                  color: '#e6f2ff'
-                }, flexGrow: 0
+              <BtHome href="#">MarlonPérez</BtHome>
+            </Box>
+            <Box
+              sx={{
+                display: { xs: "none", sm: "none", md: "flex" },
+                justifyContent: "center",
+                flexGrow: 2,
               }}
-              />
-            </IconButton>
-            <IconButton>
-              <Avatar
-                alt="Marlon Pérez"
-                sx={{width: '1.3em', height: '1.3em', flexGrow: 0}}
-                src={fotoPerfil}
-              />
-            </IconButton>
+            >
+              <BotonesLink disableRipple>Inicio</BotonesLink>
+              <BotonesLink disableRipple>Servicios</BotonesLink>
+              <BotonesLink disableRipple>Acerca de mi</BotonesLink>
+            </Box>
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "flex-end",
+              }}
+            >
+              <Button
+                sx={{
+                  ":hover": {
+                    boxShadow: "1px 1px 5px 5px rgba(47,255,190,0.3)",
+                    color: "#ffff",
+                  },
+                }}
+                variant={"contained"}
+                color={"secondary"}
+                size={"small"}
+              >
+                Contáctame
+              </Button>
+              <IconButton>
+                <GitHub
+                  sx={{
+                    width: "1em",
+                    height: "1em",
+                    color: "#f2f4ff",
+                    ":hover": {
+                      boxShadow: "15px #20d09b",
+                      color: "#e6f2ff",
+                    },
+                    flexGrow: 0,
+                  }}
+                />
+              </IconButton>
+              <IconButton>
+                <Avatar
+                  alt="Marlon Pérez"
+                  sx={{ width: "1.3em", height: "1.3em" }}
+                  src={fotoPerfil}
+                />
+              </IconButton>
+            </Box>
           </Toolbar>
         </Container>
       </AppBar>
-    </ThemeProvider>)
+    </ThemeProvider>
+  );
 }

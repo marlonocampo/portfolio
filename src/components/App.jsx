@@ -4,7 +4,7 @@ import { AppBar1 } from "./AppBar.jsx";
 import Button from "@mui/material/Button";
 
 const Item = styled(Grid)({
-  bgcolor: '#152331',
+  backgroundColor: '#152331',
   borderRadius: '5px',
   padding: '10px',
   color: '#f2f4ff',
@@ -12,9 +12,8 @@ const Item = styled(Grid)({
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  fontsize: 40,
   width: '100%',
-  height: '400px'
+  overflow: 'hidden'
 })
 
 const parpadeo = keyframes`
@@ -31,8 +30,8 @@ const parpadeo = keyframes`
 
 const Efecto = styled(Typography)({
   fontSize: 25,
+  fontFamily: 'Monospace',
   overflow: 'visible',
-  justifyContent: 'flex',
   "::before": {
     content: '"<"',
     animation: `${parpadeo} 2s infinite`,
@@ -50,14 +49,13 @@ const Efecto = styled(Typography)({
 export function App() {
   return (
     <>
-      <Container sx={{display: 'flex', justifyContent: 'center'}}>
-        <AppBar1/>
+      <AppBar1/>
+      <Container sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '10em'}}>
         <Grid
           container
           display={'grid'}
-          gridTemplateColumns={'repeat(auto-fit, minmax(min(100%, 1000px), 1fr))'}
+          gridTemplateColumns={'repeat(auto-fit, minmax(min(100%, 400px), 1fr))'}
           gap={2}
-          sx={{maxWidth: '80%', marginTop: 10}}
         >
           <Item>
             <Typography
@@ -75,16 +73,16 @@ export function App() {
             </Typography>
             <Efecto
               body={'body1'}
-              sx={{fontFamily: 'Overpass Mono', fontSize: 30, textAlign: 'center'}}
+              sx={{textAlign: 'center'}}
             >
-              Desarrollador de Sistemas
+              Programador de Sistemas
             </Efecto>
             <Typography
               body={'body1'}
               textAlign={'center'}
             >
-              Me dedico a practicar y aprender todo el tiempo, para dar soluciones a necesidades con herramientas
-              geniales 😎!
+              Me dedico a practicar y aprender todo1 el tiempo, para dar soluciones a necesidades con herramientas
+              geniales 😎! 
             </Typography>
             <Button
               variant={'outlined'}
@@ -92,7 +90,6 @@ export function App() {
             >
               Descargar CV
             </Button>
-
           </Item>
         </Grid>
       </Container>
