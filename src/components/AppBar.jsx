@@ -4,7 +4,7 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import fotoPerfil from "../Assets/Images/PerfilMarlon.jpg";
+import fotoPerfil from '../assets/Images/PerfilMarlon.jpg';
 import {
   Box,
   Container,
@@ -25,7 +25,7 @@ const BtHome = styled(Link)({
   color: "rgba(255,255,255,0.8)",
   transition: "transform .3s",
   ":hover": {
-    transform: "scale(1.1)",
+    transform: 'scale(1.1)',
     color: "#fff",
   },
   ":active": {
@@ -119,10 +119,10 @@ export function AppBar1() {
   return (
     <ThemeProvider theme={temaAppbar}>
       <CssBaseline />
-      <AppBar color={"transparent"}>
-        <Container maxWidth={"md"}>
+      <AppBar color={'transparent'}>
+        <Container maxWidth={'md'}>
           <Toolbar sx={{ paddingX: 0 }}>
-            <Box sx={{ display: { sm: "flex", md: "none" } }}>
+            <Box sx={{ display: { sm: 'flex', md: 'none' } }}>
               <IconButton color={"secondary"}>
                 <MenuIcon />
               </IconButton>
