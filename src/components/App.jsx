@@ -1,12 +1,17 @@
 import React from "react";
-import { Container, Grid, keyframes, styled, Typography } from "@mui/material";
+import {
+  Container,
+  Grid,
+  keyframes,
+  styled,
+  Typography,
+  Box,
+} from "@mui/material";
 import { AppBar1 } from "./AppBar.jsx";
 import Button from "@mui/material/Button";
+import { ImagenPerfil } from "./ImagenPerfil.jsx";
 
 const Item = styled(Grid)({
-  backgroundColor: "#152331",
-  borderRadius: "5px",
-  padding: "10px",
   color: "#f2f4ff",
   display: "flex",
   flexDirection: "column",
@@ -15,7 +20,6 @@ const Item = styled(Grid)({
   width: "100%",
   overflow: "hidden",
 });
-
 
 const parpadeo = keyframes`
   0% {
@@ -53,6 +57,7 @@ export function App() {
       <AppBar1 />
       <Container
         sx={{
+          overflow: "hidden",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -68,31 +73,45 @@ export function App() {
           gap={2}
         >
           <Item>
-            <img src="../assets/Images/PerfilMarlon.jpg" alt="" />
-          </Item>
-          <Item>
-            <Typography
-              variant={'body1'}
-              textAlign={'body'}
-            >
-              Hola soy Marlon,
+            <Typography variant={"body1"} textAlign={"center"}>
+              Hola!, mi nombre es
             </Typography>
-            <Efecto
-              body={'body'}
-              textAlign={'start'}
-            >
-              Programador de Sistemas
+            <Typography variant={"h2"} color={"#37ffc0"} textAlign={"center"}>
+              Marlon Ocampo,
+            </Typography>
+            <Efecto body={"h1"} textAlign='center'>
+              Desarrollador de Sistemas
             </Efecto>
-            <Typography body={'body1'}>
-              Me dedico a practicar y aprender todo1 el tiempo, para dar
+            <Typography sx={{ marginX: 5 }} body={"body"} textAlign={"center"}>
+              Me dedico a practicar y aprender todo el tiempo para dar
               soluciones a necesidades con herramientas geniales 😎!
             </Typography>
-            <Button variant={"outlined"} color={"secondary"}>
+            <Button
+              sx={{ marginTop: "50px" }}
+              variant={"outlined"}
+              color={"secondary"}
+            >
               Descargar CV
             </Button>
           </Item>
+          <Item>
+            <ImagenPerfil />
+          </Item>
         </Grid>
       </Container>
+      <Box
+        marginTop='10em'
+        display='flex'
+        justifyContent='center'
+        alignItems='center'
+        paddingTop={'2em'}
+        borderTop={'2px solid #ffff'}
+
+      >
+        <Typography variant="h4" color={'secondary'}>
+          Habilidades
+        </Typography>
+      </Box>
     </>
   );
 }

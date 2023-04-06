@@ -1,4 +1,3 @@
-import React from 'react';
 import { createTheme } from "@mui/material";
 import Overpass from "./Fonts/Overpass.ttf"
 

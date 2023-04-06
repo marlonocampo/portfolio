@@ -4,7 +4,7 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import fotoPerfil from '../assets/Images/PerfilMarlon.jpg';
+import fotoPerfil from "../assets/Images/PerfilMarlon.jpg";
 import {
   Box,
   Container,
@@ -25,7 +25,7 @@ const BtHome = styled(Link)({
   color: "rgba(255,255,255,0.8)",
   transition: "transform .3s",
   ":hover": {
-    transform: 'scale(1.1)',
+    transform: "scale(1.1)",
     color: "#fff",
   },
   ":active": {
@@ -41,6 +41,7 @@ const BotonesLink = styled(Button)({
   color: "rgba(255,255,255,0.8)",
   margin: "auto 1em",
   fontWeight: 500,
+  fontSize: "14px",
   ":hover": {
     background: "rgba(0,0,0,0)",
     color: "#fff",
@@ -119,10 +120,10 @@ export function AppBar1() {
   return (
     <ThemeProvider theme={temaAppbar}>
       <CssBaseline />
-      <AppBar color={'transparent'}>
-        <Container maxWidth={'md'}>
-          <Toolbar sx={{ paddingX: 0 }}>
-            <Box sx={{ display: { sm: 'flex', md: 'none' } }}>
+      <AppBar color={"transparent"}>
+        <Container maxWidth={"md"} sx={{}}>
+          <Toolbar>
+            <Box sx={{ display: { sm: "flex", md: "none" } }}>
               <IconButton color={"secondary"}>
                 <MenuIcon />
               </IconButton>
@@ -134,13 +135,13 @@ export function AppBar1() {
                 justifyContent: "flex-start",
               }}
             >
-              <BtHome href="#">MarlonPérez</BtHome>
+              <BtHome href='#'>MarlonPérez</BtHome>
             </Box>
             <Box
               sx={{
                 display: { xs: "none", sm: "none", md: "flex" },
                 justifyContent: "center",
-                flexGrow: 2,
+                flexGrow: 1,
               }}
             >
               <BotonesLink disableRipple>Inicio</BotonesLink>
@@ -184,7 +185,7 @@ export function AppBar1() {
               </IconButton>
               <IconButton>
                 <Avatar
-                  alt="Marlon Pérez"
+                  alt='Marlon Pérez'
                   sx={{ width: "1.3em", height: "1.3em" }}
                   src={fotoPerfil}
                 />
