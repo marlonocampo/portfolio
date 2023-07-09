@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "outDir": "./build",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "composite": true,
+    "useDefineForClassFields": true,
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ]
+  },
+   "include": [
+      "src",
+      "src/assets/declarations.d.ts",
+      "vite.config.json",
+      "package.json",
+      "tsconfig.json"
+    ]
+}
