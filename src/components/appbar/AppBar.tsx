@@ -1,11 +1,11 @@
-import { AppBar, Toolbar, IconButton, Box, Avatar } from '@mui/material'
+import { AppBar as MenuAppBar, Toolbar, IconButton, Box, Avatar } from '@mui/material'
 import { MenuRounded as MenuIcon, GitHub } from '@mui/icons-material'
 import { LinkHome } from './HomeButton'
 import { Links } from './Links'
 
-export function MenuAppBar(): JSX.Element {
+export function AppBar(): JSX.Element {
   return (
-    <AppBar
+    <MenuAppBar
       sx={{
         backdropFilter: 'blur(10px)',
         backgroundColor: 'rgba(19,34,58,0.87)',
@@ -13,25 +13,28 @@ export function MenuAppBar(): JSX.Element {
       }}
     >
       <Toolbar
+        variant='dense'
         sx={{
           display: 'flex',
-          justifyContent: 'space-around',
-          margin: '10px'
+          justifyContent: { xs: 'space-between', sm: 'space-around' },
+          margin: '10px',
         }}
-        variant='dense'
       >
-        <Box>
+        <Box display='flex'>
           <IconButton
-            color={'info'}
+            color='info'
             aria-label='Menu'
+            sx={{ display: { xs: 'flex', sm: 'none' } }}
           >
-            <MenuIcon
-              sx={{
-                display: { xs: 'flex', sm: 'none' }
-              }}
-            />
+            <MenuIcon />
           </IconButton>
-          <LinkHome href='#'>Marlonocampo</LinkHome>
+          <LinkHome
+            color='info'
+            disableRipple
+            href='#'
+          >
+            Marlonocampo
+          </LinkHome>
         </Box>
         <Box
           sx={{
@@ -39,9 +42,9 @@ export function MenuAppBar(): JSX.Element {
             justifyContent: 'center'
           }}
         >
-          <Links disableRipple>Inicio</Links>
-          <Links disableRipple>Servicios</Links>
-          <Links disableRipple>Acerca de mi</Links>
+          <Links color='info' disableRipple>Inicio</Links>
+          <Links color='info' disableRipple>Servicios</Links>
+          <Links color='info' disableRipple>Acerca de mi</Links>
         </Box>
         <Box>
           <IconButton
@@ -51,11 +54,7 @@ export function MenuAppBar(): JSX.Element {
             aria-label='GitHub Profile'
           >
             <GitHub
-              sx={{
-                width: '1em',
-                height: '1em',
-                color: 'text.primary'
-              }}
+              color='info'
             />
           </IconButton>
           <IconButton>
@@ -67,6 +66,6 @@ export function MenuAppBar(): JSX.Element {
           </IconButton>
         </Box>
       </Toolbar>
-    </AppBar >
+    </MenuAppBar >
   )
 }

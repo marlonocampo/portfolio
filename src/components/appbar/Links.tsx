@@ -2,10 +2,7 @@ import { styled, Button } from '@mui/material'
 
 export const Links = styled(Button)({
   borderRadius: 20,
-  color: 'rgba(255,255,255,0.8)',
   margin: 'auto 1em',
-  fontWeight: 500,
-  fontSize: '14px',
   transition: 'transform .2s',
   ':hover': {
     background: 'rgba(0,0,0,0)',
