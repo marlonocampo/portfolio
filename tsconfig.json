@@ -2,6 +2,12 @@
   "compilerOptions": {
     "target": "es6",
     "outDir": "./build",
+    "baseUrl": "./",
+    "paths": {
+      "@pages¨/*": ["src/components/pages/*"],
+      "@utils/*": ["src/utils/*"],
+      "@assets/¨*": ["src/assets/*"]
+    },
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,

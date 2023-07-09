@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { App } from './components/App'
 import { ThemeProvider } from '@emotion/react'
@@ -11,9 +11,9 @@ if (main == null) {
 const app = createRoot(main)
 
 app.render(
-  <React.StrictMode>
+  <StrictMode>
     <ThemeProvider theme={globalTheme}>
       <App />
     </ThemeProvider>
-  </React.StrictMode>
+  </StrictMode>
 )

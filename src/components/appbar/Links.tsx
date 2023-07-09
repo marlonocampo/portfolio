@@ -1,34 +1,34 @@
-import { styled, Button } from "@mui/material";
+import { styled, Button } from '@mui/material'
 
 export const Links = styled(Button)({
   borderRadius: 20,
-  color: "rgba(255,255,255,0.8)",
-  margin: "auto 1em",
+  color: 'rgba(255,255,255,0.8)',
+  margin: 'auto 1em',
   fontWeight: 500,
-  fontSize: "14px",
+  fontSize: '14px',
   transition: 'transform .2s',
-  ":hover": {
-    background: "rgba(0,0,0,0)",
-    color: "#fff",
+  ':hover': {
+    background: 'rgba(0,0,0,0)',
+    color: '#fff'
   },
-  ":hover:after": {
-    transform: "scale(1,1)",
+  ':hover:after': {
+    transform: 'scale(1,1)'
   },
-  ":after": {
+  ':after': {
     content: '""',
-    position: "absolute",
-    width: "100%",
-    height: "0.2rem",
+    position: 'absolute',
+    width: '100%',
+    height: '0.2rem',
     left: 0,
     bottom: 0,
-    background: "rgba(47,255,190,0.8)",
+    background: 'rgba(47,255,190,0.8)',
     borderRadius: 20,
-    transform: "scale(0,1)",
-    transition: "transform 0.2s ease",
+    transform: 'scale(0,1)',
+    transition: 'transform 0.2s ease'
   },
-  ":active": {
-    background: "rgba(0,0,0,0)",
-    boxShadow: "none",
+  ':active': {
+    background: 'rgba(0,0,0,0)',
+    boxShadow: 'none',
     transform: 'scale(0.95)'
-  },
+  }
 });
