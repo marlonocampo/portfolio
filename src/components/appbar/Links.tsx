@@ -28,4 +28,4 @@ export const Links = styled(Button)({
     boxShadow: 'none',
     transform: 'scale(0.95)'
   }
-});
+})

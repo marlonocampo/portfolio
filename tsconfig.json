@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "outDir": "./build",
+    "outDir": "build",
     "baseUrl": "./",
     "paths": {
       "@pages¨/*": ["src/components/pages/*"],
@@ -25,8 +25,7 @@
   },
    "include": [
       "src",
-      "src/assets/declarations.d.ts",
-      "vite.config.json",
+      "vite.config.ts",
       "package.json",
       "tsconfig.json"
     ]

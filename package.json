@@ -33,7 +33,7 @@
       "project": "./tsconfig.json"
     },
     "rules": {
-      "react/jsx-curly-brace-presence": true
+      "react/jsx-curly-brace-presence": 0
     },
     "env": {
       "node": false,

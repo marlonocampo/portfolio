@@ -1,9 +1,10 @@
 import { AppBar as MenuAppBar, Toolbar, IconButton, Box, Avatar } from '@mui/material'
-import { MenuRounded as MenuIcon, GitHub } from '@mui/icons-material'
+import { GitHubIcon, MenuIcon } from '@assets/¨styles/Icons'
+
 import { LinkHome } from './HomeButton'
 import { Links } from './Links'
 
-export function AppBar(): JSX.Element {
+export function AppBar (): JSX.Element {
   return (
     <MenuAppBar
       sx={{
@@ -17,7 +18,7 @@ export function AppBar(): JSX.Element {
         sx={{
           display: 'flex',
           justifyContent: { xs: 'space-between', sm: 'space-around' },
-          margin: '10px',
+          margin: '10px'
         }}
       >
         <Box display='flex'>
@@ -53,7 +54,7 @@ export function AppBar(): JSX.Element {
             }}
             aria-label='GitHub Profile'
           >
-            <GitHub
+            <GitHubIcon
               color='info'
             />
           </IconButton>
@@ -66,6 +67,6 @@ export function AppBar(): JSX.Element {
           </IconButton>
         </Box>
       </Toolbar>
-    </MenuAppBar >
+    </MenuAppBar>
   )
 }
