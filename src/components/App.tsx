@@ -1,12 +1,11 @@
-import { Box } from '@mui/material'
-import { AppBar } from './appbar/AppBar'
-import { Presentation } from '@pages¨/presentation/Presentation'
+import { Presentation } from './pages/presentation/Presentation'
+import { NavBar } from './appbar/NavBar'
 
 export function App (): JSX.Element {
   return (
-    <Box>
-      <AppBar />
+    <main>
+      <NavBar />
       <Presentation />
-    </Box>
+    </main>
   )
 }

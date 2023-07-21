@@ -1,9 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { App } from './components/App'
-import { ThemeProvider } from '@emotion/react'
-import { globalTheme } from './utils/Theme'
-import { CssBaseline } from '@mui/material'
+import '../src/assets/styles/index.css'
+
 const main: HTMLElement | null = document.getElementById('main')
 
 if (main == null) {
@@ -13,9 +12,6 @@ const app = createRoot(main)
 
 app.render(
   <StrictMode>
-    <ThemeProvider theme={globalTheme}>
-      <CssBaseline />
-      <App />
-    </ThemeProvider>
+    <App />
   </StrictMode>
 )
