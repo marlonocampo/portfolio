@@ -8,7 +8,8 @@ export default {
     './src/**/*.{jsx,tsx}'
   ],
   theme: {
-    extend: {}
+    extend: {
+    }
   },
   plugins: [daysiui, typography],
   daisyui: {
@@ -16,12 +17,12 @@ export default {
       {
         marlonocampoTheme: {
           primary: '#131d3f',
-          'primary-focus': '#d7d7d7',
-          secondary: '#01bebe',
-          accent: '#bec6da',
+          secondary: '#cfd7f1',
+          'secondary-content': '#f3f6ff',
+          info: '#01bebe',
+          'font-size': '16px',
+          white: '#cfd7f1',
           neutral: '#3d4451',
-          'base-50': '#000',
-          'font-size': '14px',
           fontFamily: ['overpass']
         }
       }
