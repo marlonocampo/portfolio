@@ -9,7 +9,7 @@ export function App (): JSX.Element {
   const { isDark } = useContext(ThemeContext)
 
   return (
-    <main className={isDark ? 'bg-primary' : 'bg-secondary-content'}>
+    <main data-theme={`${isDark ? 'darkTheme' : 'ligthTheme'}`} className='bg-primary'>
       <div className='badge text-black bg-amber-500 top-1 fixed mt-20 p-3 rounded-lg'>In Development</div>
       <NavBar />
       <Presentation />
