@@ -9,6 +9,7 @@ export default {
   ],
   theme: {
     extend: {
+      12: 'repeat(auto-fit, minmax(0, 1fr))'
     }
   },
   plugins: [daysiui, typography],
@@ -18,7 +19,7 @@ export default {
         ligthTheme: {
           primary: '#131d3f',
           secondary: '#cfd7f1',
-          'secondary-content': '#f3f6ff',
+          'secondary-content': '#edf1ff',
           info: '#01bebe',
           'font-size': '16px',
           white: '#cfd7f1',
@@ -26,9 +27,9 @@ export default {
           fontFamily: ['overpass']
         },
         darkTheme: {
-          primary: '#e9ebf2',
-          secondary: '#131d3f',
-          'secondary-content': '#f3f6ff',
+          primary: '#ecf1f5',
+          secondary: '#39456e',
+          'secondary-content': '#131d3f',
           info: '#01bebe',
           'font-size': '16px',
           white: '#cfd7f1',

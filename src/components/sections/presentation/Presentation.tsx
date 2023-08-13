@@ -1,27 +1,28 @@
 import { useContext } from 'react'
 import { ThemeContext } from 'src/context/ThemeContext'
+import { DownloadIcon } from '@assets/¨icons/DownloadIcon'
 export function Presentation (): JSX.Element {
-  const { isDark } = useContext(ThemeContext)
+  const photoProfileTheme = (): string => {
+    const { isDark } = useContext(ThemeContext)
+    if (isDark) return '/src/assets/images/profileDark.webp'
+    return '/src/assets/images/profileLight.webp'
+  }
+
   return (
-    <div id='#home' className={'gridColumns pt-28 px-8 h-[90vh] xl:px-64'}>
+    <div id='#home' className={'gridColumns py-24 px-8 xl:px-64 h-[95vh]'}>
       <div className='flex justify-center items-center'>
-        <img className='xs:w-[400px] lg:w-auto' src='/src/assets/images/profilePhoto.webp' alt='Photo profile marlonocampo' />
+        <img className='' src={photoProfileTheme()} width={'450px'} alt='Photo profile marlonocampo' />
       </div>
-      <div className='flex justify-center items-center'>
-        <article className={`${isDark ? 'text-secondary' : 'text-primary'} prose md:prose-lg xl:w-[80%]`}>
-          <p className='text-3xl'>¡Hola,</p>
-          <h1 className='text-info'>Soy Marlon Ocampo!</h1>
-          <p className='text-2xl'>
-            Me dedico al desarrollo de software, con experiencia en la creación de soluciones profesionales
-            con las herramientas que mejor se adapten.
+      <div className='flex items-center'>
+        <article className={'text-secondary prose md:prose-lg xl:w-[80%]'}>
+          <p className='text-3xl m-0'>¡Hola 👋🏼,</p>
+          <h1 className='text-info m-0'>Soy Marlon Ocampo!</h1>
+          <p className='text-2xl m-0'>
+            Desarrollador de aplicaciones, con más de 1 año de experiencia enfocado en tecnologías Web. <a className='text-info' href='#'>Acerca de mí</a>
           </p>
-          <a href='#'>
-            <button className='btn rounded-full mt-12 shadow-xl btn-info'>
-              <svg className='w-6 h-6 animate-bounce' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor'>
-                <path strokeLinecap='round' strokeLinejoin='round' d='M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3' />
-              </svg>
-              Descargar CV
-            </button>
+          <a href='#' className='btn rounded-full mt-12 shadow-xl btn-info text-secondary mx-2'>
+            <DownloadIcon />
+            Descargar CV
           </a>
         </article>
       </div>
