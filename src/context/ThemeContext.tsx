@@ -5,10 +5,10 @@ interface contextProps {
   changeTheme: () => void
 }
 
-export const ThemeContext = createContext<contextProps>({ isDark: true, changeTheme: () => {} })
+export const ThemeContext = createContext<contextProps>({ isDark: false, changeTheme: () => {} })
 
 export function ThemeProvider ({ children }: any): JSX.Element {
-  const [theme, setTheme] = useState<boolean>(true)
+  const [theme, setTheme] = useState<boolean>(false)
   const changeTheme = (): void => setTheme(!theme)
 
   const valuesProvider = {

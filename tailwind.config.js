@@ -9,27 +9,42 @@ export default {
   ],
   theme: {
     extend: {
-      12: 'repeat(auto-fit, minmax(0, 1fr))'
+      keyframes: {
+        slide: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'rotate(0%)' }
+        },
+        slideOut: {
+          '100%': { transform: 'translateX(-100%)', opacity: 0 },
+          '0%': { transform: 'rotate(0%)', opacity: 1 }
+        }
+      },
+      animation: {
+        slide: 'slide .3s linear',
+        slideOut: 'slideOut .3s linear'
+      }
     }
   },
   plugins: [daysiui, typography],
   daisyui: {
     themes: [
       {
-        ligthTheme: {
+        darkTheme: {
           primary: '#131d3f',
           secondary: '#cfd7f1',
           'secondary-content': '#edf1ff',
+          'secondary-focus': '#1f2c55',
           info: '#01bebe',
           'font-size': '16px',
           white: '#cfd7f1',
           neutral: '#3d4451',
           fontFamily: ['overpass']
         },
-        darkTheme: {
+        ligthTheme: {
           primary: '#ecf1f5',
           secondary: '#39456e',
           'secondary-content': '#131d3f',
+          'secondary-focus': '#e1e9f0',
           info: '#01bebe',
           'font-size': '16px',
           white: '#cfd7f1',

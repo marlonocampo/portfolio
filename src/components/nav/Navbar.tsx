@@ -1,38 +1,26 @@
 import { GitHubIcon } from '@assets/¨icons/GitHub'
 import { MenuIcon } from '@assets/¨icons/MenuIcon'
 import { ToggleTheme } from '../theme/ToggleTheme'
-import { Sidebar } from './Sidebar'
+import { links } from './Links'
+import { useContext } from 'react'
+import { SidebarContext } from 'src/context/SidebarContext'
 
 export function NavBar (): JSX.Element {
-  const classLinks = (): string => 'relative linknav activeEfect hover:text-secondary-content'
-  const links = [{
-    link: '#presentation',
-    label: 'Presentación',
-    class: classLinks()
-  },
-  {
-    link: '#skills',
-    label: 'Habilidades',
-    class: classLinks()
-  },
-  {
-    link: '#aboutme',
-    label: 'Acerca de Mí',
-    class: classLinks()
-  }]
-  const showSidebar = (): JSX.Element => <Sidebar />
+  const { closeSidebar } = useContext(SidebarContext)
+
+  const classLinks = 'linknav activeEfect hover:text-secondary-content'
 
   return (
-    <nav className={'text-secondary navbar fixed bg-transparent backdrop-blur-2xl justify-between px-8 xl:px-64 w-ful'}>
-      <div className='flex items-center gap-2'>
-        <button className='md:hidden btn btn-ghost btn-circle' onClick={showSidebar}>
+    <nav className={'text-secondary navbar fixed bg-transparent backdrop-blur-2xl justify-between px-8 xl:px-64'}>
+      <div className='flex justify-center content-center items-center'>
+        <button className='md:hidden btn btn-ghost btn-circle' onClick={closeSidebar}>
           <MenuIcon />
         </button>
         <a href='#home' className='text-xl activeEfect'>MarlonOcampo</a>
       </div>
       <div className='hidden md:flex items-center gap-8'>
-        {links.map(item => {
-          return (<a key={item.link} href={item.link} className={item.class}>{item.label}</a>)
+        {links.map(link => {
+          return (<a key={link.uri} href={link.uri} className={classLinks}>{link.label}</a>)
         })}
       </div>
       <div className='flex items-center'>

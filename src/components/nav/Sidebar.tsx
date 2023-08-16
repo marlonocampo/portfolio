@@ -1,11 +1,37 @@
+import { useContext } from 'react'
+import { links } from './Links'
+import { CloseIcon } from '@assets/¨icons/CloseIcon'
+import { SidebarContext } from 'src/context/SidebarContext'
 export function Sidebar (): JSX.Element {
+  const { isOpen, closeSidebar } = useContext(SidebarContext)
+
+  const classStyle = `py-3 pl-10 activeEfect btn-primary
+                      hover:bg-secondary-focus capitalize 
+                      border-0 rounded-full flex gap-3 text-secondary w-full`
   return (
-    <div className='drawer-side'>
-      <label htmlFor='my-drawer' className='drawer-overlay' />
-      <ul className='menu p-4 w-80 h-full bg-base-200 text-base-content'>
-        <li><a>Sidebar Item 1</a></li>
-        <li><a>Sidebar Item 2</a></li>
-      </ul>
+    <div className={`${isOpen ? 'translate-x-0' : '-translate-x-full'} z-10 h-screen w-screen fixed
+                    backdrop-blur-md ease-in-out duration-200`}
+    >
+      <div className={`p-4 w-64 h-full bg-primary border-r shadow-xl
+                      fixed rounded-r-2xl border-r-secondary-focus`}
+      >
+        <div className='flex text-secondary items-center justify-between mt-2 mb-16 ml-4'>
+          <a href='#' className=''>Marlon ocampo</a>
+          <button className='activeEfect' onClick={closeSidebar}>
+            <CloseIcon />
+          </button>
+        </div>
+        <div className='flex gap-5 flex-col'>
+          {links.map(link => {
+            return (
+              <a key={link.key} href={link.uri} className={classStyle}>
+                {<link.icon />}
+                <span>{link.label}</span>
+              </a>
+            )
+          })}
+        </div>
+      </div>
     </div>
   )
 }

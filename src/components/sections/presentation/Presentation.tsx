@@ -9,16 +9,17 @@ export function Presentation (): JSX.Element {
   }
 
   return (
-    <div id='#home' className={'gridColumns py-24 px-8 xl:px-64 h-[95vh]'}>
+    <div id='#home' className={'gridColumns py-24 px-8 xl:px-64 h-[95vh] bgTexture'}>
       <div className='flex justify-center items-center'>
-        <img className='' src={photoProfileTheme()} width={'450px'} alt='Photo profile marlonocampo' />
+        <img src={photoProfileTheme()} width={'400px'} alt='Photo profile marlonocampo' />
       </div>
       <div className='flex items-center'>
-        <article className={'text-secondary prose md:prose-lg xl:w-[80%]'}>
-          <p className='text-3xl m-0'>¡Hola 👋🏼,</p>
-          <h1 className='text-info m-0'>Soy Marlon Ocampo!</h1>
-          <p className='text-2xl m-0'>
-            Desarrollador de aplicaciones, con más de 1 año de experiencia enfocado en tecnologías Web. <a className='text-info' href='#'>Acerca de mí</a>
+        <article className={'text-secondary prose xl:w-[70%]'}>
+          <p className='text-3xl my-2'>¡Hola 👋🏼,</p>
+          <h1 className='text-info my-2 prose-h1'>Soy Marlon Ocampo!</h1>
+          <p className='text-2xl my-2'>
+            Desarrollador de aplicaciones, con más de 1 año de experiencia enfocado en tecnologías Web.<br />
+            <a className='text-info' href='#'>Acerca de mí</a>
           </p>
           <a href='#' className='btn rounded-full mt-12 shadow-xl btn-info text-secondary mx-2'>
             <DownloadIcon />
