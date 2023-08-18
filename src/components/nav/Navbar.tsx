@@ -30,7 +30,7 @@ export function NavBar (): JSX.Element {
           </a>
         </div>
         <ToggleTheme />
-        <div className='tooltip tooltip-bottom' data-tip='LinkedInd'>
+        <div className='tooltip tooltip-bottom' data-tip='Profile'>
           <a href='#' className='btn btn-ghost btn-circle avatar'>
             <div className='w-8'>
               <img
