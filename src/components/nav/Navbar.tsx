@@ -1,3 +1,4 @@
+
 import { GitHubIcon } from '@assets/¨icons/GitHub'
 import { MenuIcon } from '@assets/¨icons/MenuIcon'
 import { ToggleTheme } from '../theme/ToggleTheme'
@@ -13,7 +14,11 @@ export function NavBar (): JSX.Element {
   return (
     <nav className={'text-secondary navbar fixed bg-transparent backdrop-blur-2xl justify-between px-8 xl:px-64'}>
       <div className='flex justify-center content-center items-center'>
-        <button className='md:hidden btn btn-ghost btn-circle' onClick={closeSidebar}>
+        <button
+          className='md:hidden btn btn-ghost btn-circle'
+          aria-label='Open Sidebar'
+          onClick={closeSidebar}
+        >
           <MenuIcon />
         </button>
         <a href='#home' className='text-xl activeEfect'>MarlonOcampo</a>
