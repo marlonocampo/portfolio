@@ -4,8 +4,8 @@ import { DownloadIcon } from '@assets/¨icons/DownloadIcon'
 export function Presentation (): JSX.Element {
   const photoProfileTheme = (): string => {
     const { isDark } = useContext(ThemeContext)
-    if (isDark) return '/src/assets/images/profileDark.webp'
-    return '/src/assets/images/profileLight.webp'
+    if (isDark) return '/src/assets/images/profileLight.webp'
+    return '/src/assets/images/profileDark.webp'
   }
 
   return (
@@ -21,7 +21,10 @@ export function Presentation (): JSX.Element {
             Desarrollador de aplicaciones, con más de 1 año de experiencia enfocado en tecnologías Web.<br />
             <a className='text-info' href='#'>Acerca de mí</a>
           </p>
-          <a href='#' className='prose text-lg btn decoration-transparent rounded-full mt-12 shadow-xl btn-info capitalize text-secondary mx-2'>
+          <a
+            href='#' className='prose btn btn-info text-lg decoration-transparent hover:bg-info-content
+            rounded-full mt-12 shadow-xl shadow-cyan-600/40 capitalize text-secondary mx-2'
+          >
             <DownloadIcon />
             Descargar CV
           </a>
