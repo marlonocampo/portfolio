@@ -2,10 +2,10 @@ import { useContext } from 'react'
 import { ThemeContext } from 'src/context/ThemeContext'
 import { DownloadIcon } from '@assets/¨icons/DownloadIcon'
 export function Presentation (): JSX.Element {
+  const { isDark } = useContext(ThemeContext)
   const photoProfileTheme = (): string => {
-    const { isDark } = useContext(ThemeContext)
-    if (isDark) return '/src/assets/images/profileDark.webp'
-    return '/src/assets/images/profileLight.webp'
+    if (isDark) return '/src/assets/images/profileLight.webp'
+    return '/src/assets/images/profileDark.webp'
   }
 
   return (
