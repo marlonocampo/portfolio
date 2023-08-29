@@ -34,6 +34,7 @@ h1 {
   .linknav {
     position: relative;
   }
+
   .linknav:hover::after {
     transform: scale(1, 1);
   }
@@ -64,6 +65,19 @@ h1 {
   }
 
   .bgTexture {
-    background-image: url('/src/assets/images/bgText.png');
+    background-image: url('/src/assets/images/bgtexture.svg');
+  }
+
+  .openEffect {
+    transform: scale(.8);
+    animation: slideUp .9s ease forwards .1s;
+  }
+
+  @keyframes slideUp {
+    0% {
+    }
+    100% {
+      transform: translateY(0px);
+    }
   }
 }

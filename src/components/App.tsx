@@ -4,6 +4,7 @@ import { Skills } from './sections/Skills'
 import { ThemeContext } from 'src/context/ThemeContext'
 import { SidebarProvider } from 'src/context/SidebarContext'
 import { Presentation } from './sections/presentation/Presentation'
+import { Experience } from './sections/experience/Experience'
 const Sidebar = lazy(async () => await import('./nav/Sidebar'))
 
 export function App (): JSX.Element {
@@ -19,6 +20,7 @@ export function App (): JSX.Element {
         <NavBar />
       </SidebarProvider>
       <Presentation />
+      <Experience />
       <Skills />
     </main>
   )

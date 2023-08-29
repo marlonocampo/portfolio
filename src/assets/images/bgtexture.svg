@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920"
+  height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="b">
+      <rect width="1920" height="1080" />
+    </clipPath>
+  </defs>
+  <g id="a" clip-path="url(#b)">
+    <g transform="translate(-8 -22.109)">
+      <path
+        d="M10.223,11.223,3,17.89l7.223,7.778M28.28,11.223,35.5,17.89,28.28,25.668M22.863,4,15.64,32.891"
+        transform="translate(612.946 755.663)" fill="none" stroke="rgba(136,150,181,0.3)"
+        strokeLinecap="round" strokeLinejoin="round" stroke-width="3" />
+      <path
+        d="M10.223,11.223,3,17.89l7.223,7.778M28.28,11.223,35.5,17.89,28.28,25.668M22.863,4,15.64,32.891"
+        transform="translate(510.911 168.109)" fill="none" stroke="rgba(136,150,181,0.3)"
+        stroke-linecap="round" strokeLinejoin="round" stroke-width="3" />
+      <path
+        d="M10.223,11.223,3,17.89l7.223,7.778M28.28,11.223,35.5,17.89,28.28,25.668M22.863,4,15.64,32.891"
+        transform="translate(1665.911 741.218)" fill="none" stroke="rgba(136,150,181,0.3)"
+        stroke-linecap="round" strokeLinejoin="round" stroke-width="3" />
+      <g transform="translate(-546.606 212.274) rotate(14)">
+        <g transform="translate(1693.274 102.229)">
+          <path
+            d="M25.168,9.6v4.556h1.165a3.781,3.781,0,0,1,3.506,4.007,3.781,3.781,0,0,1-3.506,4H25.168A5.747,5.747,0,0,1,19.6,27.512h-7a5.794,5.794,0,0,1-5.592-5.97V9.6Z"
+            transform="translate(-7.011 -9.6)" fill="none" stroke="rgba(136,150,181,0.3)"
+            stroke-linecap="round" strokeLinejoin="round" stroke-width="2" fill-rule="evenodd" />
+        </g>
+        <path d="M3427.8,611.718s-2.166-.5-1.631-2.3,1.964-.2,2.7-1.987-1.238-2.285-1.238-2.285"
+          transform="translate(-1726.889 -512.352)" fill="none" stroke="rgba(136,150,181,0.3)"
+          stroke-linecap="round" strokeLinejoin="round" stroke-width="1" />
+        <path d="M3427.8,611.718s-2.166-.5-1.631-2.3,1.964-.2,2.7-1.987-1.238-2.285-1.238-2.285"
+          transform="translate(-1721.992 -512.352)" fill="none" stroke="rgba(136,150,181,0.3)"
+          stroke-linecap="round" strokeLinejoin="round" stroke-width="1" />
+      </g>
+      <g transform="translate(-111 255.959)">
+        <g transform="translate(1693.274 101.159)">
+          <path
+            d="M23.109,9.6v4.04h1.033a3.353,3.353,0,0,1,3.108,3.553,3.353,3.353,0,0,1-3.108,3.548H23.109a5.1,5.1,0,0,1-4.936,4.741h-6.2a5.137,5.137,0,0,1-4.958-5.293V9.6Z"
+            transform="translate(-7.011 -9.6)" fill="none" stroke="rgba(136,150,181,0.3)"
+            stroke-linecap="round" strokeLinejoin="round" stroke-width="2" fill-rule="evenodd" />
+        </g>
+        <path d="M3427.606,610.974s-1.92-.443-1.446-2.037,1.741-.179,2.4-1.761-1.1-2.026-1.1-2.026"
+          transform="translate(-1727.56 -513.798)" fill="none" stroke="rgba(136,150,181,0.3)"
+          stroke-linecap="round" strokeLinejoin="round" stroke-width="1" />
+        <path d="M3427.606,610.974s-1.92-.443-1.446-2.037,1.741-.179,2.4-1.761-1.1-2.026-1.1-2.026"
+          transform="translate(-1723.219 -513.798)" fill="none" stroke="rgba(136,150,181,0.3)"
+          stroke-linecap="round" strokeLinejoin="round" stroke-width="1" />
+      </g>
+      <path
+        d="M16.071,6.954A13.623,13.623,0,0,1,29.907,3.676a15.109,15.109,0,0,0,0,25.833A13.624,13.624,0,0,1,18.1,27.9M7.078,22.635A4.06,4.06,0,0,1,3,18.594a3.98,3.98,0,0,1,3.4-3.889,4.294,4.294,0,0,1,3.919-2.643,4.229,4.229,0,0,1,4.237,3.965,3.531,3.531,0,0,1,2.039,3.207,3.4,3.4,0,0,1-3.4,3.4Z"
+        transform="translate(1170.462 220.939)" fill="none" stroke="rgba(136,150,181,0.3)"
+        stroke-linecap="round" strokeLinejoin="round" stroke-width="2" />
+      <path
+        d="M16.071,6.954A13.623,13.623,0,0,1,29.907,3.676a15.109,15.109,0,0,0,0,25.833A13.624,13.624,0,0,1,18.1,27.9M7.078,22.635A4.06,4.06,0,0,1,3,18.594a3.98,3.98,0,0,1,3.4-3.889,4.294,4.294,0,0,1,3.919-2.643,4.229,4.229,0,0,1,4.237,3.965,3.531,3.531,0,0,1,2.039,3.207,3.4,3.4,0,0,1-3.4,3.4Z"
+        transform="matrix(0.951, 0.309, -0.309, 0.951, 220.395, 310.22)" fill="none"
+        stroke="rgba(136,150,181,0.3)" strokeLinecap="round" strokeLinejoin="round"
+        stroke-width="2" />
+      <path
+        d="M2287.088,1894.419c-2.548-5.923-.994-9.941,8.236-13.236s11.8-2.024,14.1,3.434,5.211,9.543,2.733,11.8-7.538-1.917-9.186-2.706a3.954,3.954,0,0,0-4.73,1.544c-1.03,1.479-1.664,8.133-4.78,8.873S2289.636,1900.342,2287.088,1894.419Z"
+        transform="translate(-886 -1292)" fill="none" stroke="rgba(136,150,181,0.3)"
+        stroke-width="2" />
+      <g transform="translate(1413 593)" fill="none" stroke="rgba(136,150,181,0.3)" stroke-width="2">
+        <circle cx="1.5" cy="1.5" r="1.5" stroke="none" />
+        <circle cx="1.5" cy="1.5" r="0.5" fill="none" />
+      </g>
+      <g transform="translate(1417 595)" fill="none" stroke="rgba(136,150,181,0.3)" stroke-width="2">
+        <circle cx="1.5" cy="1.5" r="1.5" stroke="none" />
+        <circle cx="1.5" cy="1.5" r="0.5" fill="none" />
+      </g>
+      <g transform="translate(306.935 -464.085) rotate(21)">
+        <path d="M2292.33,1887.865l2.616,2.616,2.035,2.035" transform="translate(-886 -1292)"
+          fill="none" stroke="rgba(136,150,181,0.3)" strokeLinecap="round" strokeLinejoin="round"
+          stroke-width="2" />
+        <path d="M2292.33,1887.865l2.616,2.616,2.035,2.035"
+          transform="translate(-481.535 2892.846) rotate(-90)" fill="none"
+          stroke="rgba(136,150,181,0.3)" strokeLinecap="round" strokeLinejoin="round"
+          stroke-width="2" />
+      </g>
+      <g transform="translate(-1071 5)">
+        <path
+          d="M2287.088,1894.419c-2.548-5.923-.994-9.941,8.236-13.236s11.8-2.024,14.1,3.434,5.211,9.543,2.733,11.8-7.538-1.917-9.186-2.706a3.954,3.954,0,0,0-4.73,1.544c-1.03,1.479-1.664,8.133-4.78,8.873S2289.636,1900.342,2287.088,1894.419Z"
+          transform="translate(-886 -1292)" fill="none" stroke="rgba(136,150,181,0.3)"
+          stroke-width="2" />
+        <g transform="translate(1413 593)" fill="none" stroke="rgba(136,150,181,0.3)"
+          stroke-width="2">
+          <circle cx="1.5" cy="1.5" r="1.5" stroke="none" />
+          <circle cx="1.5" cy="1.5" r="0.5" fill="none" />
+        </g>
+        <g transform="translate(1417 595)" fill="none" stroke="rgba(136,150,181,0.3)"
+          stroke-width="2">
+          <circle cx="1.5" cy="1.5" r="1.5" stroke="none" />
+          <circle cx="1.5" cy="1.5" r="0.5" fill="none" />
+        </g>
+        <g transform="translate(305.935 -465.085) rotate(21)">
+          <path d="M2292.33,1887.865l2.616,2.616,2.035,2.035" transform="translate(-886 -1292)"
+            fill="none" stroke="rgba(136,150,181,0.3)" stroke-linecap="round"
+            strokeLinejoin="round" stroke-width="2" />
+          <path d="M2292.33,1887.865l2.616,2.616,2.035,2.035"
+            transform="translate(-481.535 2892.846) rotate(-90)" fill="none"
+            stroke="rgba(136,150,181,0.3)" strokeLinecap="round" strokeLinejoin="round"
+            stroke-width="2" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
