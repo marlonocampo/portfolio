@@ -68,16 +68,21 @@ h1 {
     background-image: url('/src/assets/images/bgtexture.svg');
   }
 
-  .openEffect {
-    transform: scale(.8);
-    animation: slideUp .9s ease forwards .1s;
+  .zoomEffect {
+    transform: scale(.9);
+    animation: slideOrigin .5s ease forwards .1s;
   }
 
-  @keyframes slideUp {
-    0% {
-    }
-    100% {
-      transform: translateY(0px);
+  .slideUp {
+    transform: translateY(20px);
+    animation: slideOrigin .5s ease forwards .1s;
+  }
+
+  @keyframes slideOrigin {
+    0% {}
+    100% { 
+      transform: translateY(0px); 
+      animation: none;
     }
   }
 }

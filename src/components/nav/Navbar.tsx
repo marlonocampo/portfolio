@@ -12,7 +12,7 @@ export function NavBar (): JSX.Element {
   const classLinks = 'linknav activeEfect hover:text-secondary-content'
 
   return (
-    <nav className={'text-secondary navbar fixed bg-transparent backdrop-blur-2xl justify-between px-8 xl:px-64'}>
+    <nav className={'text-secondary navbar fixed bg-transparent backdrop-blur-2xl z-20 justify-between px-8 xl:px-64'}>
       <div className='flex justify-center content-center items-center'>
         <button
           className='md:hidden btn btn-ghost btn-circle'

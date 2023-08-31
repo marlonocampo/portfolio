@@ -9,7 +9,7 @@ export default function Sidebar (): JSX.Element {
                       hover:bg-secondary-focus   rounded-full flex gap-3 text-secondary`
   return (
     <div
-      className={`${isOpen ? 'translate-x-0' : '-translate-x-full'} z-10 h-screen w-screen fixed
+      className={`${isOpen ? 'translate-x-0' : '-translate-x-full'} z-50 h-screen w-screen fixed
                     backdrop-blur-md ease-in-out duration-200`}
     >
       <div className={`p-4 w-64 h-full bg-primary border-r shadow-xl
