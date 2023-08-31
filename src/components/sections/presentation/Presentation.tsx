@@ -19,7 +19,7 @@ export function Presentation (): JSX.Element {
           <h1 className='text-info my-2 prose-h1'>Soy Marlon Ocampo!</h1>
           <p className='text-2xl my-2'>
             Desarrollador de aplicaciones, con más de 1 año de experiencia enfocado en tecnologías Web.<br />
-            <a className='text-info activeEfect' href='#'>Acerca de mí</a>
+            <a className='decoration-transparent linknav text-info text-xl' href='#'>Acerca de mí</a>
           </p>
         </article>
         <div className='slideUp'>
