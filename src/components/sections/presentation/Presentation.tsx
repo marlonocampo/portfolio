@@ -1,17 +1,18 @@
 import { useContext } from 'react'
 import { ThemeContext } from 'src/context/ThemeContext'
 import { MessageIcon } from '@assets/¨icons/MessageIcon'
+import { SocialMedia } from '../SocialMedia'
 export function Presentation (): JSX.Element {
   const { isDark } = useContext(ThemeContext)
-  const photoProfileTheme = (): string => {
+  const pathPhotoProfileTheme = (): string => {
     if (isDark) return '/src/assets/images/profileLight.webp'
     return '/src/assets/images/profileDark.webp'
   }
 
   return (
-    <div id='#home' className={'gridColumns py-24 px-8 xl:px-64 h-[95vh] bgTexture'}>
+    <div id='#home' className={'gridColumns py-24 px-8 xl:px-64 bgTexture'}>
       <div className='flex justify-center items-center'>
-        <img src={photoProfileTheme()} className='hover:scale-105 transition-all' width={'400px'} height={'400px'} alt='Photo profile marlonocampo' />
+        <img src={pathPhotoProfileTheme()} className='hover:scale-105 transition-all' width={'400px'} height={'400px'} alt='Photo profile marlonocampo' />
       </div>
       <div className='flex flex-col items-start justify-center'>
         <article className={'zoomEffect z-10 text-secondary prose xl:w-[70%] overflow-hidden'}>
@@ -24,11 +25,12 @@ export function Presentation (): JSX.Element {
         </article>
         <div className='slideUp'>
           <button className='btn btn-info text-lg decoration-transparent hover:bg-info-content
-            rounded-full mt-12 shadow-xl shadow-cyan-600/40 capitalize text-secondary'
+            rounded-full mt-8 shadow-xl shadow-cyan-600/40 capitalize text-secondary'
           >
             <MessageIcon />
             Contactame
           </button>
+          <SocialMedia />
         </div>
       </div>
     </div>

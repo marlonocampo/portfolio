@@ -12,7 +12,7 @@ export function NavBar (): JSX.Element {
   const classLinks = 'linknav activeEfect hover:text-secondary-content'
 
   return (
-    <nav className={'text-secondary navbar fixed bg-transparent backdrop-blur-2xl z-20 justify-between px-8 xl:px-64'}>
+    <nav className={'text-secondary navbar fixed bg-transparent backdrop-blur-2xl z-20 justify-between md:px-8 xl:px-64'}>
       <div className='flex justify-center content-center items-center'>
         <button
           className='md:hidden btn btn-ghost btn-circle'
@@ -35,7 +35,7 @@ export function NavBar (): JSX.Element {
           </a>
         </div>
         <ToggleTheme />
-        <div className='tooltip tooltip-bottom' data-tip='Profile'>
+        <div className='tooltip tooltip-bottom' data-tip='Perfil'>
           <a href='#' className='btn btn-ghost btn-circle avatar'>
             <div className='w-8'>
               <img
