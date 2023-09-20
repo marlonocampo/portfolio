@@ -21,7 +21,7 @@ export function NavBar (): JSX.Element {
         >
           <MenuIcon />
         </button>
-        <a href='#home' className='text-xl activeEfect'>MarlonOcampo</a>
+        <a href='#home' className='activeEfect'>marlonocampo</a>
       </div>
       <div className='hidden md:flex items-center gap-8'>
         {links.map(link => {

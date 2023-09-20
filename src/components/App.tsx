@@ -20,8 +20,8 @@ export function App (): JSX.Element {
         <NavBar />
       </SidebarProvider>
       <Presentation />
-      <Experience />
       <Skills />
+      <Experience />
     </main>
   )
 }

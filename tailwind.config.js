@@ -36,7 +36,7 @@ export default {
           'secondary-focus': '#1f2c55',
           info: '#01bebe',
           'info-content': '#02a5a5',
-          'font-size': '16px',
+          'font-size': '18px',
           white: '#cfd7f1',
           neutral: '#3d4451',
           fontFamily: ['overpass']
@@ -48,7 +48,7 @@ export default {
           'secondary-focus': '#e1e9f0',
           info: '#01bebe',
           'info-content': '#02a5a5',
-          'font-size': '16px',
+          'font-size': '18px',
           white: '#cfd7f1',
           neutral: '#3d4451',
           fontFamily: ['overpass']

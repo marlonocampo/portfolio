@@ -2,11 +2,12 @@ import { useContext } from 'react'
 import { links } from './Links'
 import { CloseIcon } from '@assets/¨icons/CloseIcon'
 import { SidebarContext } from 'src/context/SidebarContext'
+
 export default function Sidebar (): JSX.Element {
   const { isOpen, closeSidebar } = useContext(SidebarContext)
 
   const classStyle = `py-3 pl-10 activeEfect btn-primary capitalize border-0 w-full
-                      hover:bg-secondary-focus   rounded-full flex gap-3 text-secondary`
+                      hover:bg-secondary-focus rounded-full flex gap-3 text-secondary`
   return (
     <div
       className={`${isOpen ? 'translate-x-0' : '-translate-x-full'} z-50 h-screen w-screen fixed

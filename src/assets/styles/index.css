@@ -70,12 +70,12 @@ h1 {
 
   .zoomEffect {
     transform: scale(.9);
-    animation: slideOrigin .5s ease forwards .1s;
+    animation: slideOrigin .5s ease forwards .4s;
   }
 
   .slideUp {
-    transform: translateY(20px);
-    animation: slideOrigin .5s ease forwards .1s;
+    transform: translateY(50px);
+    animation: slideOrigin .5s ease forwards .4s;
   }
 
   @keyframes slideOrigin {
