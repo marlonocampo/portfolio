@@ -5,9 +5,9 @@
     "outDir": "build",
     "baseUrl": "./",
     "paths": {
-      "@pages¨/*": ["src/components/pages/*"],
+      "@pages/*": ["src/components/pages/*"],
       "@utils/*": ["src/utils/*"],
-      "@assets/¨*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"]
     },
     "noImplicitAny": true,
     "noUnusedLocals": true,
