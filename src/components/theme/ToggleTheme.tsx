@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { ThemeContext } from 'src/context/ThemeContext'
-import { MoonIcon } from '@assets/¨icons/MoonIcon'
-import { LigthIcon } from '@assets/¨icons/LigthIcon'
+import { MoonIcon } from '@assets/icons/MoonIcon'
+import { LigthIcon } from '@assets/icons/LigthIcon'
 
 export function ToggleTheme (): JSX.Element {
   const { changeTheme, isDark } = useContext(ThemeContext)

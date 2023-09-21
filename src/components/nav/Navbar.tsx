@@ -1,6 +1,6 @@
 
-import { GitHubIcon } from '@assets/¨icons/GitHub'
-import { MenuIcon } from '@assets/¨icons/MenuIcon'
+import { GitHubIcon } from '@assets/icons/GitHub'
+import { MenuIcon } from '@assets/icons/MenuIcon'
 import { ToggleTheme } from '../theme/ToggleTheme'
 import { SectionsLinks } from './SectionsLinks'
 import { useContext } from 'react'

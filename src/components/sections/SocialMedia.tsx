@@ -1,4 +1,4 @@
-import { XIcon, LinkedInIcon, InstagramIcon } from '@assets/¨icons/SocialMediaIcons'
+import { XIcon, LinkedInIcon, InstagramIcon } from '@assets/icons/SocialMediaIcons'
 
 export function SocialMedia (): JSX.Element {
   return (

@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { ThemeContext } from 'src/context/ThemeContext'
-import { MessageIcon } from '@assets/¨icons/MessageIcon'
+import { MessageIcon } from '@assets/icons/MessageIcon'
 import { SocialMedia } from '../SocialMedia'
 export function Presentation (): JSX.Element {
   const { isDark } = useContext(ThemeContext)

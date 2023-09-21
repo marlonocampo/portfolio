@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { SectionsLinks } from './SectionsLinks'
-import { CloseIcon } from '@assets/¨icons/CloseIcon'
+import { CloseIcon } from '@assets/icons/CloseIcon'
 import { SidebarContext } from 'src/context/SidebarContext'
 
 export default function Sidebar (): JSX.Element {

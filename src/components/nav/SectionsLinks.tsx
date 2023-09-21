@@ -1,4 +1,4 @@
-import { UserIcon, RocketIcon, StartIcon } from '@assets/¨icons/PortfolioIcons'
+import { UserIcon, RocketIcon, StartIcon } from '@assets/icons/PortfolioIcons'
 
 export const SectionsLinks = [{
   key: 1,
