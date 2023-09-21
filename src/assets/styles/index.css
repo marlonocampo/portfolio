@@ -61,7 +61,11 @@ h1 {
   .gridColumns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
-    gap: 2em;
+  }
+
+  .gridSkills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
   }
 
   .bgTexture {

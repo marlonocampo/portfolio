@@ -1,6 +1,6 @@
 import { UserIcon, RocketIcon, StartIcon } from '@assets/¨icons/PortfolioIcons'
 
-export const links = [{
+export const SectionsLinks = [{
   key: 1,
   uri: '#presentation',
   label: 'Presentación',

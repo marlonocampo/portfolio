@@ -1,6 +1,6 @@
 import { useContext, lazy, Suspense } from 'react'
 import { NavBar } from './nav/Navbar'
-import { Skills } from './sections/Skills'
+import { Skills } from './sections/skills/Skills'
 import { ThemeContext } from 'src/context/ThemeContext'
 import { SidebarProvider } from 'src/context/SidebarContext'
 import { Presentation } from './sections/presentation/Presentation'

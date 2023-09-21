@@ -2,7 +2,7 @@
 import { GitHubIcon } from '@assets/¨icons/GitHub'
 import { MenuIcon } from '@assets/¨icons/MenuIcon'
 import { ToggleTheme } from '../theme/ToggleTheme'
-import { links } from './Links'
+import { SectionsLinks } from './SectionsLinks'
 import { useContext } from 'react'
 import { SidebarContext } from 'src/context/SidebarContext'
 
@@ -24,7 +24,7 @@ export function NavBar (): JSX.Element {
         <a href='#home' className='activeEfect'>marlonocampo</a>
       </div>
       <div className='hidden md:flex items-center gap-8'>
-        {links.map(link => {
+        {SectionsLinks.map(link => {
           return (<a key={link.uri} href={link.uri} className={classLinks}>{link.label}</a>)
         })}
       </div>
