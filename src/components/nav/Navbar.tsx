@@ -5,6 +5,7 @@ import { ToggleTheme } from '../theme/ToggleTheme'
 import { SectionsLinks } from './SectionsLinks'
 import { useContext } from 'react'
 import { SidebarContext } from 'src/context/SidebarContext'
+import { OriginalLogo } from '../LogoMarlonocampo/LogoMarlonOcampo'
 
 export function NavBar (): JSX.Element {
   const { closeSidebar } = useContext(SidebarContext)
@@ -21,7 +22,11 @@ export function NavBar (): JSX.Element {
         >
           <MenuIcon />
         </button>
-        <a href='#home' className='activeEfect'>marlonocampo</a>
+        <div className='tooltip tooltip-bottom w-5 m-2 activeEfect' data-tip='marlonocampo'>
+          <a href='#home'>
+            <OriginalLogo />
+          </a>
+        </div>
       </div>
       <div className='hidden md:flex items-center gap-8'>
         {SectionsLinks.map(link => {
@@ -30,7 +35,7 @@ export function NavBar (): JSX.Element {
       </div>
       <div className='flex items-center'>
         <div className='tooltip tooltip-bottom' data-tip='Perfil de GitHub'>
-          <a href='https://github.com/marlonocampo' target='blank' className='btn btn-ghost btn-circle' aria-label='github profile'>
+          <a href='#' target='blank' className='btn btn-ghost btn-circle' aria-label='github profile'>
             <GitHubIcon />
           </a>
         </div>

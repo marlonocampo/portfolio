@@ -84,9 +84,10 @@ h1 {
 
   @keyframes slideOrigin {
     0% {}
-    100% { 
-      transform: translateY(0px); 
+
+    100% {
+      transform: translateY(0px);
       animation: none;
     }
   }
-}
+    }
