@@ -7,8 +7,8 @@ const OriginalLogo = (): JSX.Element => {
           <g transform='translate(-5 42.074)'>
             <rect width='27' height='99' rx='13.5' fill='currentcolor' />
             <g transform='translate(72.775)'>
-              <rect width='26' height='69' rx='13' transform='translate(0.225)' fill='currentcolor' />
-              <circle cx='13' cy='13' r='13' transform='translate(0.225 73)' fill='currentcolor' />
+              <rect width='27' height='69' rx='13' transform='translate(0.225)' fill='currentcolor' />
+              <circle cx='13' cy='14' r='14' transform='translate(0.225 73)' fill='currentcolor' />
             </g>
             <line
               y2='25' transform='translate(48.944 32.5)'

@@ -1,11 +1,11 @@
-import { useContext } from 'react'
 import { SectionsLinks } from './SectionsLinks'
 import { CloseIcon } from '@assets/icons/CloseIcon'
-import { SidebarContext } from 'src/context/SidebarContext'
+interface props {
+  closeSidebar: () => void
+  isOpen: boolean
+}
 
-export default function Sidebar (): JSX.Element {
-  const { isOpen, closeSidebar } = useContext(SidebarContext)
-
+export function Sidebar ({ closeSidebar, isOpen }: props): JSX.Element {
   const classStyle = `py-3 pl-4 activeEfect btn-primary capitalize border-0 w-full
                       hover:bg-secondary-focus rounded-full flex gap-3 text-secondary`
   return (
@@ -18,7 +18,7 @@ export default function Sidebar (): JSX.Element {
       >
         <div className='flex text-secondary items-center justify-between mt-2 mb-16 pl-4'>
           <a href='#' className=''>marlonocampo</a>
-          <button className='activeEfect' onClick={closeSidebar} aria-label='Close Sidebar'>
+          <button className='activeEfect' onClick={() => closeSidebar()} aria-label='Close Sidebar'>
             <CloseIcon />
           </button>
         </div>

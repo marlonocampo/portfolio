@@ -4,29 +4,29 @@ const skills = [{
   name: 'Desarrollo Frontend',
   icon: () => <FrontendIcon />,
   key: 1,
-  color1: 'blue1',
-  color2: 'blue2'
+  color1: 'from-blue1',
+  color2: 'from-blue2'
 },
 {
   key: 2,
   icon: () => <BackendIcon />,
   name: 'Desarrollo Backend',
-  color1: 'red1',
-  color2: 'red2'
+  color1: 'from-red1',
+  color2: 'from-red2'
 },
 {
   key: 3,
   icon: () => <DataBaseIcon />,
   name: 'Diseño de Bases de datos',
-  color1: 'green1',
-  color2: 'green2'
+  color1: 'from-green1',
+  color2: 'from-green2'
 },
 {
   key: 4,
   icon: () => <DataAnalysis />,
   name: 'Análisis de Datos',
-  color1: 'purple1',
-  color2: 'purple2'
+  color1: 'from-purple1',
+  color2: 'from-purple2'
 }]
 
 export function Skills (): JSX.Element {
@@ -40,11 +40,14 @@ export function Skills (): JSX.Element {
         {skills.map(skill => {
           return (
             <div
-              key={skill.key} className={`flex bg-gradient-to-br from-${skill.color1} to-${skill.color2} justify-center
+              key={skill.key} className={`flex bg-gradient-to-br justify-center
                                          items-center card m-3 shadow-xl p-5 border border-3 border-secondary-focus`}
             >
-              <div className='m-2 w-[60px]'>{<skill.icon />}</div>
+              <div className='m-2 w-12'>{<skill.icon />}</div>
               <span className='m-2'>{skill.name}</span>
+              <span>
+                <button className='text-sm link activeEfect'>Leer Más</button>
+              </span>
             </div>
           )
         })}

@@ -3,16 +3,6 @@
 @tailwind utilities;
 
 html {
-  ::-webkit-scrollbar {
-    width: 5px;
-    height: 7px;
-    background-color: #131d3f;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    background-color: #66769b;
-  }
 
   min-width: 400px;
   overflow: auto;
@@ -90,4 +80,16 @@ h1 {
       animation: none;
     }
   }
-    }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+    background-color: #131d3f;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #66769b;
+  }
+
+}

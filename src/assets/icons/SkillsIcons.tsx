@@ -59,7 +59,7 @@ const DataAnalysis = (): JSX.Element => {
     <svg xmlns='http://www.w3.org/2000/svg' fill='currentcolor' viewBox='0 0 98 99'>
       <g transform='translate(-1400 -122)'>
         <g transform='translate(1400 122)' fill='none' stroke='currentcolor' strokeWidth='4'>
-          <rect width='98' height='99' rx='14' stroke='none' />
+          <rect rx='14' stroke='none' />
           <rect x='1.75' y='1.75' width='94.5' height='95.5' rx='12.25' fill='none' />
         </g>
         <path
