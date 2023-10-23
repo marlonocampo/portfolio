@@ -33,16 +33,22 @@ const skills = [{
 
 export function Skills (): JSX.Element {
   const [isShowDescription, isSetShowDescription] = useState(false)
+  const [currentSkill, setCurrentSkill] = useState({ key: 0, name: '' })
 
   const handleShowDescription = (): void => {
     isSetShowDescription(!isShowDescription)
+  }
+
+  const showDescriptionSkill = ({ key, name }: { key: number, name: string }): void => {
+    setCurrentSkill({ key, name })
+    handleShowDescription()
   }
 
   return (
     <>
       {isShowDescription && (
         <Suspense fallback={<></>}>
-          <DescriptionSkills handleShowDescription={handleShowDescription} />
+          <DescriptionSkills handleShowDescription={handleShowDescription} currentSkill={currentSkill} />
         </Suspense>
       )}
       <div className='flex justify-center items-center py-2'>
@@ -59,7 +65,7 @@ export function Skills (): JSX.Element {
               <div className='m-2 w-12'>{<skill.icon />}</div>
               <span className='m-2'>{skill.name}</span>
               <span>
-                <button onClick={handleShowDescription} className='text-sm link activeEfect'>Saber Más...</button>
+                <button onClick={() => showDescriptionSkill(skill)} className='text-sm link activeEfect'>Saber Más...</button>
               </span>
             </div>
           )
