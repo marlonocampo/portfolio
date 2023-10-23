@@ -11,7 +11,7 @@ export function Sidebar ({ closeSidebar, isOpen }: props): JSX.Element {
   return (
     <div
       className={`${isOpen ? 'translate-x-0' : '-translate-x-full'} z-50 h-full w-full fixed
-                    backdrop-blur-md ease-in-out duration-200`}
+                    backdrop-blur-md ease-out duration-200`}
     >
       <div className={`${isOpen ? 'translate-x-0' : '-translate-x-full'} p-4 w-64 h-full bg-primary border-r shadow-xl
                       rounded-r-2xl border-r-secondary-focus`}

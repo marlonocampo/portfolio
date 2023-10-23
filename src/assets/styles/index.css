@@ -72,13 +72,18 @@ h1 {
     animation: slide-origin 500ms ease forwards;
   }
 
-  @keyframes slideOrigin {
-    0% {}
+  @keyframes slide-origin {
+    0% {opacity: 0;}
+    100% { transform: translate(0px) }
+  }
 
-    100% {
-      transform: translateY(0px);
-      animation: none;
-    }
+  .slide-up {
+    animation: slide-up 300ms ease forwards;
+    transform: translateY(100%);
+  }
+
+  @keyframes slide-up {
+    to { transform: translateY(0px); }
   }
 
   ::-webkit-scrollbar {

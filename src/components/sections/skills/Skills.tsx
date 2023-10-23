@@ -1,4 +1,6 @@
+import { lazy, Suspense, useState } from 'react'
 import { FrontendIcon, BackendIcon, DataBaseIcon, DataAnalysis } from '@assets/icons/SkillsIcons'
+const DescriptionSkills = lazy(async () => await import('./DescriptionSkills'))
 
 const skills = [{
   name: 'Desarrollo Frontend',
@@ -30,8 +32,19 @@ const skills = [{
 }]
 
 export function Skills (): JSX.Element {
+  const [isShowDescription, isSetShowDescription] = useState(false)
+
+  const handleShowDescription = (): void => {
+    isSetShowDescription(!isShowDescription)
+  }
+
   return (
     <>
+      {isShowDescription && (
+        <Suspense fallback={<></>}>
+          <DescriptionSkills handleShowDescription={handleShowDescription} />
+        </Suspense>
+      )}
       <div className='flex justify-center items-center py-2'>
         <div className='divider' />
         <h1 className='text-3xl font-bold text-secondary mt-10'>Habilidades</h1>
@@ -46,7 +59,7 @@ export function Skills (): JSX.Element {
               <div className='m-2 w-12'>{<skill.icon />}</div>
               <span className='m-2'>{skill.name}</span>
               <span>
-                <button className='text-sm link activeEfect'>Leer Más</button>
+                <button onClick={handleShowDescription} className='text-sm link activeEfect'>Saber Más...</button>
               </span>
             </div>
           )
