@@ -15,7 +15,7 @@ export function Presentation (): JSX.Element {
         <img src={pathPhotoProfileTheme()} className='hover:scale-105 transition-all' width={'300px'} height={'300px'} alt='Photo profile marlonocampo' />
       </div>
       <div className='flex flex-col items-start justify-center'>
-        <article className={'zoomEffect z-10 text-secondary prose xl:w-[80%] overflow-hidden'}>
+        <article className={'zoom-effect z-10 text-secondary prose xl:w-[80%] overflow-hidden'}>
           <p className='text-xl my-2'>¡Hola 👋🏼,</p>
           <h1 className='text-info my-2 prose-h1'>Soy Marlon Ocampo!</h1>
           <p className='text-xl my-2'>
@@ -23,7 +23,7 @@ export function Presentation (): JSX.Element {
             <a className='decoration-transparent linknav text-info text-xl' href='#'>Acerca de mí</a>
           </p>
         </article>
-        <div className='slideUp'>
+        <div className='slide-up-min'>
           <button className='btn btn-info decoration-transparent hover:bg-info-content
             rounded-full mt-8 shadow-xl shadow-cyan-600/40 capitalize text-secondary'
           >

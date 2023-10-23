@@ -62,14 +62,14 @@ h1 {
     background-image: url('/src/assets/images/bgtexture.svg');
   }
 
-  .zoomEffect {
+  .zoom-effect {
     transform: scale(.9);
-    animation: slideOrigin .5s ease forwards .4s;
+    animation: slide-origin 500ms ease forwards;
   }
 
-  .slideUp {
+  .slide-up-min {
     transform: translateY(50px);
-    animation: slideOrigin .5s ease forwards .4s;
+    animation: slide-origin 500ms ease forwards;
   }
 
   @keyframes slideOrigin {
