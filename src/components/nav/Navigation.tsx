@@ -35,7 +35,7 @@ export function Navigation (): JSX.Element {
         </div>
         <div className='flex items-center'>
           <div className='tooltip tooltip-bottom' data-tip='Perfil de GitHub'>
-            <a href='#' target='blank' className='btn btn-ghost btn-circle' aria-label='github profile'>
+            <a href='#skills' target='blank' className='btn btn-ghost btn-circle' aria-label='github profile'>
               <GitHubIcon />
             </a>
           </div>

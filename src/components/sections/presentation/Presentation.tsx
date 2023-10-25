@@ -10,7 +10,7 @@ export function Presentation (): JSX.Element {
   }
 
   return (
-    <div id='#home' className={'gridColumns py-24 px-8 xl:px-64 bgTexture'}>
+    <div id='presentation' className={'gridColumns py-24 px-8 xl:px-64 bgTexture'}>
       <div className='flex justify-center items-center'>
         <img src={pathPhotoProfileTheme()} className='hover:scale-105 transition-all' width={'300px'} height={'300px'} alt='Photo profile marlonocampo' />
       </div>
