@@ -32,8 +32,8 @@ const InstagramIcon = (): JSX.Element => {
 const XIcon = (): JSX.Element => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26'>
-      <g id='Grupo_25' data-name='Grupo 25' transform='translate(-530 -104)'>
-        <g id='Elipse_13' data-name='Elipse 13' transform='translate(530 104)' fill='none' stroke='currentcolor' strokeWidth='2'>
+      <g transform='translate(-530 -104)'>
+        <g transform='translate(530 104)' fill='none' stroke='currentcolor' strokeWidth='2'>
           <circle cx='12.5' cy='12.5' r='12.5' stroke='none' />
           <circle cx='12.5' cy='12.5' r='11.5' fill='none' />
         </g>
