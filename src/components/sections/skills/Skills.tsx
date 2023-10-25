@@ -17,7 +17,7 @@ export function Skills (): JSX.Element {
   }
 
   return (
-    <>
+    <section>
       {isShowDescription && (
         <Suspense fallback={<></>}>
           <DescriptionSkills handleShowDescription={handleShowDescription} currentSkill={currentSkill} />
@@ -45,6 +45,6 @@ export function Skills (): JSX.Element {
           )
         })}
       </div>
-    </>
+    </section>
   )
 }
