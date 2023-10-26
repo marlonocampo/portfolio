@@ -1,8 +1,8 @@
 const LinkedInIcon = (): JSX.Element => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 25 25'>
-      <g id='Grupo_24' data-name='Grupo 24' transform='translate(-552 -104)'>
-        <g id='Grupo_23' data-name='Grupo 23' transform='translate(552 104)'>
+      <g transform='translate(-552 -104)'>
+        <g transform='translate(552 104)'>
           <path
             id='linkedin' d='M4.907,12.968V6.1H2.624v6.87ZM3.766,5.159a1.19,1.19,0,1,0,.015-2.374,1.19,1.19,0,1,0-.03,2.374Zm4.667,7.809V9.131a1.55,1.55,0,0,1,.076-.557A1.249,1.249,0,0,1,9.68,7.738c.826,0,1.156.63,1.156,1.554v3.675H13.12V9.027c0-2.111-1.126-3.092-2.628-3.092A2.269,2.269,0,0,0,8.433,7.069v.024H8.418l.015-.024V6.1H6.151c.029.645,0,6.87,0,6.87Z'
             transform='translate(4.696 4.624)' fill='currentcolor'

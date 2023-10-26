@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="199" height="199" viewBox="0 0 199 199">
-  <path id="Trazado_54" data-name="Trazado 54" d="M99.5,0A99.5,99.5,0,1,1,0,99.5,99.5,99.5,0,0,1,99.5,0Z" fill="none"/>
-  <g id="Grupo_57" data-name="Grupo 57" transform="translate(-881.96 -250.199)">
-    <g id="Grupo_56" data-name="Grupo 56" transform="translate(913 284.074)">
-      <g id="Grupo_55" data-name="Grupo 55" transform="translate(0 0)">
-        <rect id="Rectángulo_14" data-name="Rectángulo 14" width="36.968" height="135.551" rx="18" fill="#fff"/>
-        <g id="Grupo_54" data-name="Grupo 54" transform="translate(98.583)">
-          <rect id="Rectángulo_15" data-name="Rectángulo 15" width="36.968" height="94.475" rx="18" transform="translate(1.369)" fill="#fff"/>
-          <circle id="Elipse_14" data-name="Elipse 14" cx="19.169" cy="19.169" r="19.169" transform="translate(0 99.952)" fill="#fff"/>
+  <path d="M99.5,0A99.5,99.5,0,1,1,0,99.5,99.5,99.5,0,0,1,99.5,0Z" fill="none"/>
+  <g transform="translate(-881.96 -250.199)">
+    <g transform="translate(913 284.074)">
+      <g transform="translate(0 0)">
+        <rect width="36.968" height="135.551" rx="18" fill="#fff"/>
+        <g transform="translate(98.583)">
+          <rect data-name="Rectángulo 15" width="36.968" height="94.475" rx="18" transform="translate(1.369)" fill="#fff"/>
+          <circle idcx="19.169" cy="19.169" r="19.169" transform="translate(0 99.952)" fill="#fff"/>
         </g>
-        <line id="Línea_1" data-name="Línea 1" y2="34.23" transform="translate(67.014 44.499)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="24"/>
+        <line y2="34.23" transform="translate(67.014 44.499)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="24"/>
       </g>
     </g>
   </g>
