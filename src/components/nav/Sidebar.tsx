@@ -22,16 +22,18 @@ export function Sidebar ({ closeSidebar, isOpen }: props): JSX.Element {
             <CloseIcon />
           </button>
         </div>
-        <div className='flex gap-5 flex-col'>
+        <ul className='flex gap-5 flex-col'>
           {SectionsLinks.map(link => {
             return (
-              <a key={link.key} href={link.uri} className={classStyle}>
-                {<link.icon />}
-                <span>{link.label}</span>
-              </a>
+              <li key={link.key}>
+                <a href={link.uri} className={classStyle}>
+                  {<link.icon />}
+                  <span>{link.label}</span>
+                </a>
+              </li>
             )
           })}
-        </div>
+        </ul>
       </div>
     </div>
   )
