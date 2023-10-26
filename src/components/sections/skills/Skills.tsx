@@ -17,16 +17,15 @@ export function Skills (): JSX.Element {
   }
 
   return (
-    <section>
+    <section className='mt-16'>
       {isShowDescription && (
         <Suspense fallback={<></>}>
           <DescriptionSkills handleShowDescription={handleShowDescription} currentSkill={currentSkill} />
         </Suspense>
       )}
-      <div className='flex justify-center items-center py-2'>
-        <div className='divider' />
-        <h1 id='skills' className='text-3xl font-bold text-secondary mt-10'>Habilidades</h1>
-      </div>
+      <h1 id='skills' className='text-center text-3xl font-bold text-secondary'>
+        Habilidades
+      </h1>
       <div className='text-secondary gridSkills gap-4 p-8'>
         {descriptionSkills.map(skill => {
           return (
