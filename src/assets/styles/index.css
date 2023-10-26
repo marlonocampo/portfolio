@@ -66,12 +66,12 @@ h1 {
 
   .zoom-effect {
     transform: scale(.9);
-    animation: slide-origin 500ms ease forwards;
+    animation: slide-origin 200ms ease forwards;
   }
 
   .slide-up-min {
     transform: translateY(50px);
-    animation: slide-origin 500ms ease forwards;
+    animation: slide-origin 200ms ease forwards;
   }
 
   @keyframes slide-origin {
@@ -80,7 +80,7 @@ h1 {
   }
 
   .slide-up {
-    animation: slide-up 300ms ease forwards;
+    animation: slide-up 200ms ease forwards;
     transform: translateY(100%);
   }
 
