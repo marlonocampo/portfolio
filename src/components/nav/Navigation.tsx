@@ -23,7 +23,7 @@ export function Navigation (): JSX.Element {
             <MenuIcon />
           </button>
           <div className='tooltip tooltip-bottom w-5 m-2 activeEfect' data-tip='marlonocampo'>
-            <a href='#home'>
+            <a href='#'>
               <OriginalLogo />
             </a>
           </div>

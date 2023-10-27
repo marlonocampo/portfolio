@@ -23,9 +23,9 @@ export function Skills (): JSX.Element {
           <DescriptionSkills handleShowDescription={handleShowDescription} currentSkill={currentSkill} />
         </Suspense>
       )}
-      <h1 id='skills' className='text-center text-3xl font-bold text-secondary'>
+      <h2 id='skills' className='text-center text-3xl font-bold text-secondary'>
         Habilidades
-      </h1>
+      </h2>
       <div className='text-secondary gridSkills gap-4 p-8'>
         {descriptionSkills.map(skill => {
           return (
@@ -36,7 +36,7 @@ export function Skills (): JSX.Element {
               <div className='m-2 w-12'>{<skill.icon />}</div>
               <span className='m-2'>{skill.name}</span>
               <div className='tooltip tooltip-bottom' data-tip='Ver Detalles'>
-                <button onClick={() => showDescriptionSkill(skill)} className='text-sm link activeEfect'>
+                <button onClick={() => showDescriptionSkill(skill)} className='text-sm link activeEfect' aria-label='Show Description'>
                   <UpSlideIcon />
                 </button>
               </div>
