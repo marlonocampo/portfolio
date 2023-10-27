@@ -4,6 +4,8 @@ import { Skills } from './sections/skills/Skills'
 import { ThemeContext } from 'src/context/ThemeContext'
 import { Presentation } from './sections/presentation/Presentation'
 import { ProfesionalExperience } from './sections/profesionalExperience/ProfesionalExperience'
+import { AboutMe } from './sections/aboutMe/AboutMe'
+import { Contactame } from './ContactMe/ContactMe'
 
 export function App (): JSX.Element {
   const { isDark } = useContext(ThemeContext)
@@ -15,6 +17,8 @@ export function App (): JSX.Element {
       <Presentation />
       <Skills />
       <ProfesionalExperience />
+      <AboutMe />
+      <Contactame />
     </main>
   )
 }
