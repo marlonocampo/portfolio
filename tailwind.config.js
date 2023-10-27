@@ -49,7 +49,8 @@ export default {
           'font-size': '18px',
           white: '#cfd7f1',
           neutral: '#3d4451',
-          fontFamily: ['overpass']
+          fontFamily: ['overpass'],
+          'neutral-focus': 'rgba(255, 255, 255, 0.010)'
         },
         ligthTheme: {
           primary: '#ecf1f5',
@@ -61,7 +62,8 @@ export default {
           'font-size': '18px',
           white: '#cfd7f1',
           neutral: '#3d4451',
-          fontFamily: ['overpass']
+          fontFamily: ['overpass'],
+          'neutral-focus': 'rgba(0, 0, 0, 0.010)'
         }
       }
     ]
