@@ -17,13 +17,13 @@ export function Skills (): JSX.Element {
   }
 
   return (
-    <section className='mt-16'>
+    <section className='mt-16' id='skills'>
       {isShowDescription && (
         <Suspense fallback={<></>}>
           <DescriptionSkills handleShowDescription={handleShowDescription} currentSkill={currentSkill} />
         </Suspense>
       )}
-      <h2 id='skills' className='text-center text-3xl font-bold text-secondary'>
+      <h2 className='text-center text-3xl font-bold text-secondary'>
         Habilidades
       </h2>
       <div className='text-secondary gridSkills gap-4 p-8'>
