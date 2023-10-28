@@ -18,6 +18,6 @@ Te menciono estas:
   3. Compilador Vite ⚡
 
 
-Si puedes quiers compartir tus conocimientos, estoy abierto a valorar tu opinión a través de un PR 🫱🏽‍🫲🏽
+Si puedes quierEs compartir tus conocimientos, estoy abierto a valorar tu opinión a través de un PR 🫱🏽‍🫲🏽
 
 ### Proxiamente en 🌐 "marlonocampo.com" 🥳
