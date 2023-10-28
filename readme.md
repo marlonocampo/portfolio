@@ -1,7 +1,7 @@
 ## Portafolio personal de Marlon Ocampo 😎
 
 Este proyecto es dedicado a mi presentación como desarrollador de software Profesional. 
-En él se detalla mis habilidedes e información de que me permite dar a conocer lo que puedo lograr 👨🏽‍💼
+En él se detalla mis habilidedes e información que me permite dar a conocer lo que puedo lograr 👨🏽‍💼
 
 Puedes navegar a través de las secciones: 
   1. Presentación Principal
@@ -17,5 +17,7 @@ Te menciono estas:
   2. Estilizado con el framework de css Tailwind y CSS3 nativo 👨🏽‍🎨
   3. Compilador Vite ⚡
 
+
+Si puedes quiers compartir tus conocimientos, estoy abierto a valorar tu opinión a través de un PR 🫱🏽‍🫲🏽
 
 ### Proxiamente en 🌐 "marlonocampo.com" 🥳
