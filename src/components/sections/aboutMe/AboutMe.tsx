@@ -10,7 +10,7 @@ export function AboutMe (): JSX.Element {
             <p className='p-7 text-ce'>
               Desarrollador de software con experiencia en la creación de soluciones profesionales.
               Especializado en el área web, aplicando herramientas y conocimientos que permitan
-              lograr los objetivos destacados.
+              lograr objetivos destacados.
             </p>
           </article>
           <div className='absolute bottom-0 right-4 text-3xl font-bold'>""</div>
