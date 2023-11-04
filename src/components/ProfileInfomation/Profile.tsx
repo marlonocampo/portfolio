@@ -11,18 +11,12 @@ function Profile ({ handleShowProfile }: { handleShowProfile: Function }): JSX.E
         </button>
       </div>
       <div className='flex flex-col items-center justify-center prose text-secondary px-8 pb-8'>
-        <div className='w-20'>
-          <img
-            className='rounded-full ring-2 ring-secondary'
-            alt='marlonocampo'
-            src='/src/assets/images/minProfile.webp'
-          />
-        </div>
-        <h3 className='text-secondary'>Marlon José Ocampo Pérez</h3>
+        <h3 className='text-secondary my-5'>Marlon José Ocampo Pérez</h3>
         <h4 className='text-secondary'>Desarrollador de Software</h4>
         <ul>
           <li>Nacionalidad: Nicaragua </li>
           <li>email: info@marlonocampo.com </li>
+          <li>Empresa: Grpo Pellas - CLN</li>
         </ul>
         <div className='stats shadow-md text-secondary'>
           <div className='stat place-items-center'>
