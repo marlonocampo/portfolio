@@ -1,14 +1,18 @@
-import { useState } from 'react'
+import { useState, lazy, Suspense } from 'react'
 import { GitHubIcon } from '@assets/icons/GitHub'
 import { MenuIcon } from '@assets/icons/MenuIcon'
 import { ToggleTheme } from '../theme/ToggleTheme'
 import { SectionsLinks } from './SectionsLinks'
 import { LogoMarlonOcampo } from '../LogoMarlonocampo/LogoMarlonOcampo'
 import { Sidebar } from './Sidebar'
+const Profile = lazy(async () => await import('../ProfileInfomation/Profile'))
 
 export function Navigation (): JSX.Element {
   const [isOpenSidebar, setIsOpenSidebar] = useState<boolean>(false)
+  const [showProfile, setShowProfile] = useState<boolean>(false)
   const handleOpenSidebar = (): void => setIsOpenSidebar(!isOpenSidebar)
+  const handleShowProfile = (): void => setShowProfile(!showProfile)
+
   const classLinks = 'linknav activeEfect hover:text-secondary-content'
 
   return (
@@ -23,7 +27,7 @@ export function Navigation (): JSX.Element {
             <MenuIcon />
           </button>
           <div className='tooltip tooltip-bottom w-5 m-2 activeEfect' data-tip='marlonocampo'>
-            <a href='#'>
+            <a href='#presentation' aria-label='marlonocampo'>
               <LogoMarlonOcampo />
             </a>
           </div>
@@ -41,19 +45,26 @@ export function Navigation (): JSX.Element {
           </div>
           <ToggleTheme />
           <div className='tooltip tooltip-bottom' data-tip='Perfil'>
-            <a href='#' className='btn btn-ghost btn-circle avatar'>
-              <div className='w-8'>
-                <img
-                  className='rounded-full'
-                  alt='marlonocampo'
-                  src='/src/assets/images/minProfile.webp'
-                />
+            <button onClick={handleShowProfile} className='btn btn-ghost btn-circle avatar'>
+              <div className='avatar online'>
+                <div className='w-8'>
+                  <img
+                    className='rounded-full'
+                    alt='marlonocampo'
+                    src='/src/assets/images/minProfile.webp'
+                  />
+                </div>
               </div>
-            </a>
+            </button>
           </div>
         </div>
       </nav>
       <Sidebar closeSidebar={handleOpenSidebar} isOpen={isOpenSidebar} />
+      {showProfile && (
+        <Suspense fallback={<></>}>
+          <Profile handleShowProfile={handleShowProfile} />
+        </Suspense>
+      )}
     </>
   )
 }
