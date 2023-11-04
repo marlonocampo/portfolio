@@ -1,8 +1,9 @@
 import { lazy, Suspense, useState } from 'react'
 import { UpSlideIcon } from '@assets/icons/UpSlideIcon'
 import { descriptionSkills } from './descriptionSkills'
+import { Title } from '../titles/Title'
 const DescriptionSkills = lazy(async () => await import('./ShowDescriptionSkills'))
-
+const idSection = 'skills'
 export function Skills (): JSX.Element {
   const [isShowDescription, isSetShowDescription] = useState(false)
   const [currentSkill, setCurrentSkill] = useState({ key: 0, name: '' })
@@ -17,15 +18,13 @@ export function Skills (): JSX.Element {
   }
 
   return (
-    <section className='mt-16' id='skills'>
+    <section className='mt-16' id={idSection}>
       {isShowDescription && (
         <Suspense fallback={<></>}>
           <DescriptionSkills handleShowDescription={handleShowDescription} currentSkill={currentSkill} />
         </Suspense>
       )}
-      <h2 className='text-center text-3xl font-bold text-secondary'>
-        Habilidades
-      </h2>
+      <Title idSection={idSection} />
       <div className='text-secondary gridSkills gap-4 p-8'>
         {descriptionSkills.map(skill => {
           return (

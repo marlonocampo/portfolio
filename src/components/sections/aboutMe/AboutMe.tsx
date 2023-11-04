@@ -1,9 +1,9 @@
+import { Title } from '../titles/Title'
+const idSection = 'aboutme'
 export function AboutMe (): JSX.Element {
   return (
-    <section className='mt-16 ' id='aboutme'>
-      <h2 id='skills' className='mb-10 text-3xl font-bold text-secondary text-center'>
-        Acerca de mi
-      </h2>
+    <section className='mt-16 ' id={idSection}>
+      <Title idSection={idSection} />
       <div className='flex items-center justify-center'>
         <div className='border-2 rounded-2xl p-4 w-72 h-72 m-5 border-info relative text-secondary'>
           <article className='w-72 h-72 bg-primary rounded-2xl shadow-lg border border-secondary-focus'>

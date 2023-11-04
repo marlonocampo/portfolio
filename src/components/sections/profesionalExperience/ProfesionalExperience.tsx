@@ -1,11 +1,11 @@
+import { Title } from '../titles/Title'
 import { profesionalEperienceInfo } from './profesionalExperienceInfo'
-
+const idSection = 'profesionalEperience'
 export function ProfesionalExperience (): JSX.Element {
   return (
-    <section id='profesionalEperience' className='px-8 mt-16'>
-      <h2 className='mb-10 text-3xl font-bold text-secondary text-center'>
-        Experiencia Profesional
-      </h2>
+    <section id={idSection} className='px-8 mt-16'>
+      <Title idSection={idSection} />
+
       <div className='overflow-auto'>
         <div className='m-5 flex items-center justify-center min-w-[720px]'>
           <ul className='steps text-primary'>
