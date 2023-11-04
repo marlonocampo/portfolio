@@ -3,7 +3,7 @@ import { FigureContactMe } from './FigureContactMe'
 import { Title } from '../sections/titles/Title'
 const idSection = 'contactme'
 
-export function Contactame (): JSX.Element {
+export function ContactMe (): JSX.Element {
   return (
     <section className='mt-16 pb-52' id={idSection}>
       <Title idSection={idSection} />

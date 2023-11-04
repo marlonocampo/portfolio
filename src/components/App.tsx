@@ -5,7 +5,8 @@ import { ThemeContext } from 'src/context/ThemeContext'
 import { Presentation } from './sections/presentation/Presentation'
 import { ProfesionalExperience } from './sections/profesionalExperience/ProfesionalExperience'
 import { AboutMe } from './sections/aboutMe/AboutMe'
-import { Contactame } from './ContactMe/ContactMe'
+import { ContactMe } from './ContactMe/ContactMe'
+import { Footer } from './sections/footer/Footer'
 
 export function App (): JSX.Element {
   const { isDark } = useContext(ThemeContext)
@@ -17,7 +18,8 @@ export function App (): JSX.Element {
       <Skills />
       <ProfesionalExperience />
       <AboutMe />
-      <Contactame />
+      <ContactMe />
+      <Footer />
     </main>
   )
 }
