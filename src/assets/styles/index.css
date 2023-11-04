@@ -8,7 +8,9 @@ html {
   overflow: auto;
 }
 
-.steps .step:after { color: white; }
+.steps .step:after {
+  color: white;
+}
 
 @font-face {
   font-family: overpass;
@@ -85,7 +87,20 @@ h1 {
   }
 
   @keyframes slide-up {
-    to { transform: translateY(0px); }
+    to {
+      transform: translateY(0px);
+    }
+  }
+
+  .slide-down {
+    animation: slide-down 200ms ease forwards;
+    transform: translateY(-100%);
+  }
+
+  @keyframes slide-down {
+    to {
+      transform: translateY(0px);
+    }
   }
 
   ::-webkit-scrollbar {
