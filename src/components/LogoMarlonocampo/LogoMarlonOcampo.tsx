@@ -1,5 +1,5 @@
 
-const OriginalLogo = (): JSX.Element => {
+const LogoMarlonOcampo = (): JSX.Element => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 105 105'>
       <g transform='translate(-709 -301.074)'>
@@ -21,4 +21,4 @@ const OriginalLogo = (): JSX.Element => {
   )
 }
 
-export { OriginalLogo }
+export { LogoMarlonOcampo }

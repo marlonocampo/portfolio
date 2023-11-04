@@ -3,7 +3,7 @@ import { GitHubIcon } from '@assets/icons/GitHub'
 import { MenuIcon } from '@assets/icons/MenuIcon'
 import { ToggleTheme } from '../theme/ToggleTheme'
 import { SectionsLinks } from './SectionsLinks'
-import { OriginalLogo } from '../LogoMarlonocampo/LogoMarlonOcampo'
+import { LogoMarlonOcampo } from '../LogoMarlonocampo/LogoMarlonOcampo'
 import { Sidebar } from './Sidebar'
 
 export function Navigation (): JSX.Element {
@@ -24,7 +24,7 @@ export function Navigation (): JSX.Element {
           </button>
           <div className='tooltip tooltip-bottom w-5 m-2 activeEfect' data-tip='marlonocampo'>
             <a href='#'>
-              <OriginalLogo />
+              <LogoMarlonOcampo />
             </a>
           </div>
         </div>
