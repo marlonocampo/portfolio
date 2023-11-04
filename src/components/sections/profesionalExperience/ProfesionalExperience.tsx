@@ -3,7 +3,7 @@ import { profesionalEperienceInfo } from './profesionalExperienceInfo'
 const idSection = 'profesionalEperience'
 export function ProfesionalExperience (): JSX.Element {
   return (
-    <section id={idSection} className='px-8 mt-16'>
+    <section id={idSection} className='px-8 mt-16 xl:px-28'>
       <Title idSection={idSection} />
 
       <div className='overflow-auto'>

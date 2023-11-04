@@ -18,7 +18,7 @@ export function Skills (): JSX.Element {
   }
 
   return (
-    <section className='mt-16' id={idSection}>
+    <section className='mt-16 xl:px-28' id={idSection}>
       {isShowDescription && (
         <Suspense fallback={<></>}>
           <DescriptionSkills handleShowDescription={handleShowDescription} currentSkill={currentSkill} />

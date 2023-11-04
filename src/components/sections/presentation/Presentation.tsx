@@ -10,12 +10,12 @@ export function Presentation (): JSX.Element {
   }
 
   return (
-    <div id='presentation' className={'gridColumns py-24 px-8 xl:px-64 bgTexture'}>
+    <div id='presentation' className={'gridColumns py-24 px-8 xl:px-80 bgTexture'}>
       <div className='flex justify-center items-center'>
-        <img src={pathPhotoProfileTheme()} className='hover:scale-105 transition-all' width={'300px'} height={'300px'} alt='Photo profile marlonocampo' />
+        <img src={pathPhotoProfileTheme()} className='hover:scale-105 transition-all' width={'270px'} height={'270px'} alt='Photo profile marlonocampo' />
       </div>
       <div className='flex flex-col items-start justify-center'>
-        <article className={'zoom-effect z-10 text-secondary prose xl:w-[80%] overflow-hidden'}>
+        <article className={'zoom-effect z-10 text-secondary prose overflow-hidden'}>
           <p className='text-xl my-2'>¡Hola 👋🏼,</p>
           <h1 className='text-info my-2'>Soy Marlon Ocampo!</h1>
           <p className='text-xl my-2'>
@@ -24,12 +24,13 @@ export function Presentation (): JSX.Element {
           </p>
         </article>
         <div className='slide-up-min'>
-          <button className='btn btn-info decoration-transparent hover:bg-info-content
+          <a
+            href='#contactme' className='btn btn-info decoration-transparent hover:bg-info-content
             rounded-full mt-8 shadow-xl shadow-cyan-600/40 capitalize text-secondary'
           >
             <MessageIcon />
             Contactame
-          </button>
+          </a>
           <SocialMedia />
         </div>
       </div>
