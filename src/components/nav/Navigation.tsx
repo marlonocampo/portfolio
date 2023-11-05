@@ -5,6 +5,7 @@ import { ToggleTheme } from '../theme/ToggleTheme'
 import { SectionsLinks } from './SectionsLinks'
 import { LogoMarlonOcampo } from '../LogoMarlonocampo/LogoMarlonOcampo'
 import { Sidebar } from './Sidebar'
+import { urlContact } from './urlContact'
 const Profile = lazy(async () => await import('../ProfileInfomation/Profile'))
 
 export function Navigation (): JSX.Element {
@@ -12,7 +13,7 @@ export function Navigation (): JSX.Element {
   const [showProfile, setShowProfile] = useState<boolean>(false)
   const handleOpenSidebar = (): void => setIsOpenSidebar(!isOpenSidebar)
   const handleShowProfile = (): void => setShowProfile(!showProfile)
-
+  const { githubUrl } = urlContact()
   const classLinks = 'linknav activeEfect hover:text-secondary-content'
 
   return (
@@ -39,7 +40,7 @@ export function Navigation (): JSX.Element {
         </div>
         <div className='flex items-center'>
           <div className='tooltip tooltip-bottom' data-tip='Perfil de GitHub'>
-            <a href='#skills' target='blank' className='btn btn-ghost btn-circle' aria-label='github profile'>
+            <a href={githubUrl} target='blank' className='btn btn-ghost btn-circle' aria-label='github profile'>
               <GitHubIcon />
             </a>
           </div>

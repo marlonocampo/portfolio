@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { ThemeContext } from 'src/context/ThemeContext'
 import { MessageIcon } from '@assets/icons/MessageIcon'
-import { SocialMedia } from '../SocialMedia'
+import { SocialMedia } from '../SocialMediaContact'
 export function Presentation (): JSX.Element {
   const { isDark } = useContext(ThemeContext)
   const pathPhotoProfileTheme = (): string => {
