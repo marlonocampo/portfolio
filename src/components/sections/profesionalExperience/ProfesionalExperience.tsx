@@ -1,4 +1,4 @@
-import { Title } from '../titles/Title'
+import { Title } from '../../titles/Title'
 import { profesionalEperienceInfo } from './profesionalExperienceInfo'
 const idSection = 'profesionalEperience'
 export function ProfesionalExperience (): JSX.Element {

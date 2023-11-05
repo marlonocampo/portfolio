@@ -1,7 +1,7 @@
 import { lazy, Suspense, useState } from 'react'
 import { UpSlideIcon } from '@assets/icons/UpSlideIcon'
 import { descriptionSkills } from './descriptionSkills'
-import { Title } from '../titles/Title'
+import { Title } from '../../titles/Title'
 const DescriptionSkills = lazy(async () => await import('./ShowDescriptionSkills'))
 const idSection = 'skills'
 export function Skills (): JSX.Element {

@@ -1,6 +1,6 @@
 import { FormContactMe } from './FormContactMe'
 import { FigureContactMe } from './FigureContactMe'
-import { Title } from '../sections/titles/Title'
+import { Title } from '../../titles/Title'
 const idSection = 'contactme'
 
 export function ContactMe (): JSX.Element {

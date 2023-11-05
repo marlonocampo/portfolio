@@ -1,4 +1,4 @@
-import { Title } from '../titles/Title'
+import { Title } from '../../titles/Title'
 const idSection = 'aboutme'
 export function AboutMe (): JSX.Element {
   return (
