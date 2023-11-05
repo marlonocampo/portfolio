@@ -15,8 +15,8 @@ function Profile ({ handleShowProfile }: { handleShowProfile: Function }): JSX.E
         <h4 className='text-secondary'>Desarrollador de Software</h4>
         <ul>
           <li>Nacionalidad: Nicaragua </li>
-          <li>email: info@marlonocampo.com </li>
-          <li>Empresa: Grpo Pellas - CLN</li>
+          <li>Email: info@marlonocampo.com </li>
+          <li>N° de Contacto: #### ####</li>
         </ul>
         <div className='stats shadow-md text-secondary'>
           <div className='stat place-items-center'>
