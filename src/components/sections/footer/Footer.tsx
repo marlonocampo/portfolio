@@ -1,4 +1,4 @@
-import { LogoMarlonOcampo } from 'src/components/LogoMarlonocampo/LogoMarlonOcampo'
+import { LogoMarlonOcampo } from '../../../components/LogoMarlonocampo/LogoMarlonOcampo'
 
 export function Footer (): JSX.Element {
   return (
