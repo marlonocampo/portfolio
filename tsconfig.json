@@ -9,6 +9,7 @@
       "@utils/*": ["src/utils/*"],
       "@assets/*": ["src/assets/*"]
     },
+    "esModuleInterop": true,
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -30,6 +31,7 @@
       "package.json",
       "tsconfig.json",
       "postcss.config.js",
-      "tailwind.config.js"
+      "tailwind.config.js",
+      "jest.config.js"
     ]
 }

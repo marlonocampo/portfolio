@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { Navigation } from './nav/Navigation'
 import { Skills } from './sections/skills/Skills'
-import { ThemeContext } from 'src/context/ThemeContext'
+import { ThemeContext } from '../context/ThemeContext'
 import { Presentation } from './sections/presentation/Presentation'
 import { ProfesionalExperience } from './sections/profesionalExperience/ProfesionalExperience'
 import { AboutMe } from './sections/aboutMe/AboutMe'
