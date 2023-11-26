@@ -2,7 +2,7 @@ import { Title } from '../../titles/Title'
 const idSection = 'aboutme'
 export function AboutMe (): JSX.Element {
   return (
-    <section className='mt-16 ' id={idSection}>
+    <section className='mt-16 mb-28' id={idSection}>
       <Title idSection={idSection} />
       <div className='flex items-center justify-center'>
         <div className='border-2 rounded-2xl p-4 w-72 h-72 mr-5 border-info relative text-secondary'>
