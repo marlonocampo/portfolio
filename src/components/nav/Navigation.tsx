@@ -1,5 +1,5 @@
 import { useState, lazy, Suspense } from 'react'
-import { GitHubIcon } from '@assets/icons/GitHub'
+import { GitHubIcon } from '@assets/icons/GitHubIcon'
 import { MenuIcon } from '@assets/icons/MenuIcon'
 import { ToggleTheme } from '../theme/ToggleTheme'
 import { SectionsLinks } from './SectionsLinks'

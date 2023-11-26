@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { ThemeContext } from 'src/context/ThemeContext'
+import { ThemeContext } from '../../../context/ThemeContext'
 import { MessageIcon } from '@assets/icons/MessageIcon'
 import { SocialMedia } from '../SocialMediaContact'
 export function Presentation (): JSX.Element {

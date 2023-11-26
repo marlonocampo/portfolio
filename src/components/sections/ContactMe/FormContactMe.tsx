@@ -7,19 +7,19 @@ export function FormContactMe (): JSX.Element {
   return (
     <form onSubmit={sendEmail} className='text-secondary w-80 rounded-3xl border-secondary-focus shadow-xl border p-7'>
       <div className='form-control mb-4'>
-        <label className='label' for='name'>
+        <label className='label' htmlFor='name'>
           ¿Cuál es tu nombre?
         </label>
         <input type='text' id='name' maxLength={50} className='input input-bordered input-secondary rounded-full  input-md w-full' />
       </div>
       <div className='form-control mb-4'>
-        <label className='label' for='email'>
+        <label className='label' htmlFor='email'>
           Tu correo
         </label>
         <input name='email' id='email' type='email' maxLength={30} placeholder='' className='input input-bordered rounded-full input-secondary  input-md w-full' />
       </div>
       <div className='form-control mb-5'>
-        <label className='label' for='detail'>
+        <label className='label' htmlFor='detail'>
           Detalle
         </label>
         <textarea
