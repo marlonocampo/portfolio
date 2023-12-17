@@ -10,13 +10,13 @@ export function FormContactMe (): JSX.Element {
         <label className='label' htmlFor='name'>
           ¿Cuál es tu nombre?
         </label>
-        <input type='text' id='name' maxLength={50} className='input input-bordered input-secondary rounded-full  input-md w-full' />
+        <input type='text' id='name' maxLength={50} className='input input-bordered input-secondary bg-transparent rounded-full input-md w-full' />
       </div>
       <div className='form-control mb-4'>
         <label className='label' htmlFor='email'>
           Tu correo
         </label>
-        <input name='email' id='email' type='email' maxLength={30} placeholder='' className='input input-bordered rounded-full input-secondary  input-md w-full' />
+        <input name='email' id='email' type='email' maxLength={30} placeholder='' className='input input-bordered bg-transparent rounded-full input-secondary input-md w-full' />
       </div>
       <div className='form-control mb-5'>
         <label className='label' htmlFor='detail'>
@@ -25,7 +25,7 @@ export function FormContactMe (): JSX.Element {
         <textarea
           id='detail'
           placeholder='Escribe tu petición, sugerencia o pregunta'
-          className='input input-bordered input-secondary input-md w-full rounded-2xl min-h-[100px] max-h-[200px]'
+          className='input input-bordered input-secondary input-md bg-transparent w-full rounded-2xl min-h-[100px] max-h-[200px]'
           maxLength={200}
         />
       </div>
