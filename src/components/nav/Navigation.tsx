@@ -6,6 +6,7 @@ import { SectionsLinks } from './SectionsLinks'
 import { LogoMarlonOcampo } from '../LogoMarlonocampo/LogoMarlonOcampo'
 import { Sidebar } from './Sidebar'
 import { urlContact } from './urlContact'
+
 const Profile = lazy(async () => await import('../ProfileInfomation/Profile'))
 
 export function Navigation (): JSX.Element {
@@ -15,6 +16,10 @@ export function Navigation (): JSX.Element {
   const handleShowProfile = (): void => setShowProfile(!showProfile)
   const { githubUrl } = urlContact()
   const classLinks = 'linknav activeEfect hover:text-secondary-content'
+
+  const getUrlMinProfile = (): string => {
+    return new URL('./../../assets/images/minProfile.webp', import.meta.url).href
+  }
 
   return (
     <>
@@ -52,7 +57,7 @@ export function Navigation (): JSX.Element {
                   <img
                     className='rounded-full'
                     alt='marlonocampo'
-                    src='/src/assets/images/minProfile.webp'
+                    src={getUrlMinProfile()}
                   />
                 </div>
               </div>
