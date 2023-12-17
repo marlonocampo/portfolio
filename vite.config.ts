@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [
     tsConfigPaths(),
     react()],
-  base: '/'
+  base: '/marlonocampoportfolio'
 })
