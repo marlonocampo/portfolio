@@ -1,7 +1,7 @@
 name: Deploy to Gitub Pages
 on:
   push:
-    branches: [ "CI-Github" ]
+    branches: [ "master" ]
 
 permissions:
   contents: read
