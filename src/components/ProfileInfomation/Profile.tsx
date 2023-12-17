@@ -18,7 +18,7 @@ function Profile ({ handleShowProfile }: { handleShowProfile: Function }): JSX.E
           <li>Email: info@marlonocampo.com </li>
           <li>N° de Contacto: #### ####</li>
         </ul>
-        <div className='stats shadow-md text-secondary'>
+        <div className='stats shadow-md text-secondary bg-transparent'>
           <div className='stat place-items-center'>
             <div>Experiencia</div>
             <div className='stat-value'>+1</div>
