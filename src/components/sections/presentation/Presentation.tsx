@@ -15,7 +15,7 @@ export function Presentation (): JSX.Element {
         <img src={getPhotoPresentation} className='hover:scale-105 transition-all' width={'270px'} height={'270px'} alt='Photo profile marlonocampo' />
       </div>
       <div className='flex flex-col items-start justify-center'>
-        <article className={'zoom-effect z-10 text-secondary prose overflow-hidden'}>
+        <article className={'zoom-effect-letter z-10 text-secondary prose overflow-hidden'}>
           <p className='text-xl my-2'>¡Hola 👋🏼,</p>
           <h1 className='text-info my-2'>Soy Marlon Ocampo!</h1>
           <p className='text-xl my-2'>

@@ -68,8 +68,14 @@ h1 {
 
   .zoom-effect {
     transform: scale(.9);
+    animation: slide-origin 200ms ease forwards;
+  }
+
+  .zoom-effect-letter {
+    transform: scale(.9);
     animation: slide-origin 1000ms ease forwards;
   }
+
 
   .slide-up-min {
     transform: translateY(50px);
