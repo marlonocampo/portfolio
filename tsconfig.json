@@ -4,6 +4,7 @@
     "module": "ESNext",
     "outDir": "build",
     "baseUrl": "./",
+    "types": ["vite/client"],
     "paths": {
       "@pages/*": ["src/components/pages/*"],
       "@utils/*": ["src/utils/*"],
