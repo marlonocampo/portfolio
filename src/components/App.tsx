@@ -7,12 +7,15 @@ import { ProfesionalExperience } from './sections/profesionalExperience/Profesio
 import { AboutMe } from './sections/aboutMe/AboutMe'
 import { ContactMe } from './sections/ContactMe/ContactMe'
 import { Footer } from './sections/footer/Footer'
+import { EnvirontmentTag } from './Utils/components/EnvirontmentTag'
+import { isProduction } from './Utils/constant/environment'
 
 export function App (): JSX.Element {
   const { isDark } = useContext(ThemeContext)
 
   return (
     <main data-theme={`${isDark ? 'darkTheme' : 'ligthTheme'}`} className='bg-primary scrollbarDark'>
+      {isProduction() && <EnvirontmentTag />}
       <Navigation />
       <Presentation />
       <Skills />
