@@ -1,4 +1,4 @@
-import { useState, lazy, Suspense } from 'react'
+import { useState, Suspense, lazy } from 'react'
 import { GitHubIcon } from '@assets/icons/GitHubIcon'
 import { MenuIcon } from '@assets/icons/MenuIcon'
 import { ToggleTheme } from '../theme/ToggleTheme'
@@ -13,7 +13,9 @@ export function Navigation (): JSX.Element {
   const [isOpenSidebar, setIsOpenSidebar] = useState<boolean>(false)
   const [showProfile, setShowProfile] = useState<boolean>(false)
   const handleOpenSidebar = (): void => setIsOpenSidebar(!isOpenSidebar)
-  const handleShowProfile = (): void => setShowProfile(!showProfile)
+  const handleShowProfile = (): void => setShowProfile(true)
+  const handleCloseProfile = (): void => setShowProfile(false)
+
   const { githubUrl } = urlContact()
   const classLinks = 'linknav activeEfect hover:text-secondary-content'
 
@@ -68,7 +70,7 @@ export function Navigation (): JSX.Element {
       <Sidebar closeSidebar={handleOpenSidebar} isOpen={isOpenSidebar} />
       {showProfile && (
         <Suspense fallback={<></>}>
-          <Profile handleShowProfile={handleShowProfile} />
+          <Profile handleShowProfile={handleCloseProfile} />
         </Suspense>
       )}
     </>
