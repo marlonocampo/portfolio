@@ -16,7 +16,7 @@ Se puede explorar las herramientas y prácticas con las que fue elaborado, te me
 
   1. 📚 La librería React v18.2
   2. 👨🏽‍🎨 Estilizado con el framework de css Tailwind v5.1 y CSS3 nativo 
-  3. ⚡Herramienta de compilación Vite v4.3
+  3. ⚡Herramienta de compilación Vite v4.5.3
 
   He tomando en cuenta las métricas de **Google Lighthouse** como base de valoración técnica de un sitio web profresional, las cuáles he superado con éxito.
 
