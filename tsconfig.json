@@ -29,7 +29,7 @@
    "include": [
       // Folders
       "src",
-      "testing",
+      "tests",
       // Files
       "vite.config.ts",
       "vitest.config.ts",
