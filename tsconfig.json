@@ -6,8 +6,8 @@
     "baseUrl": "./",
     "types": ["vite/client"],
     "paths": {
-      "@pages/*": ["src/components/pages/*"],
-      "@utils/*": ["src/utils/*"],
+      // "@pages/*": ["src/components/pages/*"],
+      // "@utils/*": ["src/utils/*"],
       "@assets/*": ["src/assets/*"]
     },
     "esModuleInterop": true,
