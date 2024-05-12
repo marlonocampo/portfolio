@@ -27,8 +27,12 @@
     ]
   },
    "include": [
+      // Folders
       "src",
+      "testing",
+      // Files
       "vite.config.ts",
+      "vitest.config.ts",
       "package.json",
       "tsconfig.json",
       "postcss.config.js",
