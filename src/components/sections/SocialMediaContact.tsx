@@ -4,7 +4,7 @@ export function SocialMedia (): JSX.Element {
   const { xUrl, instagramUrl, linkedInUrl } = urlContact()
 
   return (
-    <div className='flex justify-center flex-grow-0 w-full gap-1 mt-5'>
+    <div className='flex justify-center flex-grow-0 w-full mt-5'>
       <div className='tooltip tooltip-bottom' data-tip='X'>
         <a href={xUrl} aria-label='X' target='_blank' className='btn btn-ghost btn-circle text-secondary' rel='noreferrer'><XIcon /></a>
       </div>

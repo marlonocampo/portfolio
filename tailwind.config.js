@@ -37,6 +37,7 @@ export default {
   },
   plugins: [daysiui, typography],
   daisyui: {
+    logs: false,
     themes: [
       {
         darkTheme: {
