@@ -15,6 +15,12 @@ export const profesionalEperienceInfo = [
     key: 3,
     name: 'Compañía Licorera de Nicaragua',
     position: 'Desarrollador Web',
-    duration: 'Enero de 2023 - la actualidad'
+    duration: '2023 - 2024'
+  },
+  {
+    key: 3,
+    name: 'Grupo Financiero Ficohsa',
+    position: 'Oficial de Desarrollo e Integraciones',
+    duration: 'Enero de 2025 - la actualidad'
   }
 ]
