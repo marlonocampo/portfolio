@@ -18,7 +18,7 @@ export const profesionalEperienceInfo = [
     duration: '2023 - 2024'
   },
   {
-    key: 3,
+    key: 4,
     name: 'Grupo Financiero Ficohsa',
     position: 'Oficial de Desarrollo e Integraciones',
     duration: 'Enero de 2025 - la actualidad'
