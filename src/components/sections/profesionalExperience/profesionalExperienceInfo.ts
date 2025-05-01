@@ -14,7 +14,7 @@ export const profesionalEperienceInfo = [
   {
     key: 3,
     name: 'Compañía Licorera de Nicaragua',
-    position: 'Desarrollador Web',
+    position: 'Desarrollador FullStack',
     duration: '2023 - 2024'
   },
   {

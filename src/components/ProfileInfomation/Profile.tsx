@@ -23,7 +23,7 @@ function Profile ({ handleShowProfile }: { handleShowProfile: Function }): JSX.E
           <div className='stats shadow-md text-secondary bg-transparent'>
             <div className='stat place-items-center'>
               <div>Experiencia</div>
-              <div className='stat-value'>+2</div>
+              <div className='stat-value'>+3</div>
               <div className='stat-desc text-secondary'>Año</div>
             </div>
 

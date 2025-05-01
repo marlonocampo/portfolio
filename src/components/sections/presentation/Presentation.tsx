@@ -19,7 +19,7 @@ export function Presentation (): JSX.Element {
           <p className='text-xl my-2'>¡Hola 👋🏼,</p>
           <h1 className='text-info my-2'>Soy Marlon Ocampo!</h1>
           <p className='text-xl my-2'>
-            Desarrollador de software, con más de 2 años de experiencia enfocado en tecnologías Web.<br />
+            Desarrollador de software, con más de 3 años de experiencia enfocado en tecnologías Web.<br />
           </p>
         </article>
         <div className='slide-up-min flex flex-col items-start'>
