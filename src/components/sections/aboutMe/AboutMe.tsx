@@ -6,7 +6,7 @@ export function AboutMe (): JSX.Element {
       <Title idSection={idSection} />
       <div className='flex items-center justify-center'>
         <div className='border-2 rounded-2xl p-4 w-72 h-72 mr-5 border-info relative text-secondary'>
-          <article className='w-72 h-72 bg-primary rounded-2xl shadow-lg border border-secondary-focus'>
+          <article className='w-72 h-72 bg-primary rounded-2xl shadow-lg border border-accent'>
             <p className='p-7 text-ce'>
               Desarrollador de software con experiencia en la creación de soluciones profesionales.
               Especializado en el área web, aplicando herramientas y conocimientos que permitan

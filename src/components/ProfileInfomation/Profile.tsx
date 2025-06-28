@@ -6,7 +6,7 @@ function Profile ({ handleShowProfile }: { handleShowProfile: Function }): JSX.E
       className='w-screen h-screen bg-transparent fixed z-30'
       onClick={() => handleShowProfile()}
     >
-      <div className='flex flex-col bg-primary right-4 top-16 zoom-effect shadow-2xl fixed z-40 justify-center border-secondary-focus border-2 rounded-xl xl:right-32'>
+      <div className='flex flex-col bg-primary right-4 top-16 zoom-effect shadow-2xl fixed z-40 justify-center border-accent border-2 rounded-xl xl:right-32'>
         <div className='flex justify-end text-secondary p-2'>
           <button onClick={() => handleShowProfile()}>
             <CloseIcon />

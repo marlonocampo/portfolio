@@ -30,7 +30,7 @@ export function Skills (): JSX.Element {
           return (
             <div
               key={skill.key} className={`flex bg-gradient-to-br justify-center
-                                         items-center card m-3 shadow-xl p-5 border border-3 border-secondary-focus`}
+                                         items-center card m-3 shadow-xl p-5 border-1 border-accent`}
             >
               <div className='m-2 w-12'>{<skill.icon />}</div>
               <span className='m-2'>{skill.name}</span>

@@ -16,9 +16,9 @@ export function Presentation (): JSX.Element {
       </div>
       <div className='flex flex-col items-start justify-center'>
         <article className={'zoom-effect-letter z-10 text-secondary prose overflow-hidden'}>
-          <p className='text-xl my-2'>¡Hola 👋🏼,</p>
-          <h1 className='text-info my-2'>Soy Marlon Ocampo!</h1>
-          <p className='text-xl my-2'>
+          <p className='text-xl mt-2 mb-2'>¡Hola 👋🏼,</p>
+          <h1 className='text-info mb-2 mt-2'>Soy Marlon Ocampo!</h1>
+          <p className='text-xl mt-2 mb-2'>
             Desarrollador de software, con más de 3 años de experiencia enfocado en tecnologías Web.<br />
           </p>
         </article>

@@ -1,5 +1,38 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@plugin "@tailwindcss/typography";
+
+@plugin "daisyui/theme" {
+  name: "ligthTheme";
+  default: true;
+  --color-primary: #ecf1f5;
+  --color-secondary: #39456e;
+  --color-secondary-content: #131d3f;
+  --color-accent: #e1e9f0;
+  --color-info: #01bebe;
+  --color-info-content: #02a5a5;
+  --color-marlon: #01bebe;
+  --color-neutral: #3d4451;
+}
+
+@plugin "daisyui/theme" {
+  name: "darkTheme";
+  --color-primary: #131d3f;
+  --color-secondary: #cfd7f1;
+  --color-secondary-content: #edf1ff;
+  --color-accent: #1f2c55;
+  --color-info: #01bebe;
+  --color-info-content: #02a5a5;
+  --color-neutral: #3d4451;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('/src/assets/fonts/Overpass.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
 
 html {
   scroll-behavior: smooth;
@@ -7,20 +40,12 @@ html {
   overflow: auto;
 }
 
+body {  
+  font-family: 'Overpass';
+  font-size: 18px;
+}
 .steps .step:after {
   color: white;
-}
-
-@font-face {
-  font-family: overpass;
-  src: url('/src/assets/fonts/Overpass.woff2') format('woff2');
-  font-display: swap;
-  font-style: normal;
-  font-weight: 400;
-}
-
-h1 {
-  color: #0000
 }
 
 @layer components {

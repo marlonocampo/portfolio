@@ -1,11 +1,10 @@
 /** @type {import('tailwindcss').Config} */
-import * as daysiui from 'daisyui'
 import typography from '@tailwindcss/typography'
 
 export default {
   content: [
     './index.html',
-    './src/**/*.{jsx,tsx}'
+    './src/**/*.{jsx,tsx,html}'
   ],
   theme: {
     extend: {
@@ -32,39 +31,11 @@ export default {
         red2: 'rgba(209, 13, 13, 0.2)',
         purple1: 'rgba(71, 21, 207, 0.2)',
         purple2: 'rgba(39, 0, 235, 0.2)'
+      },
+      fontFamily: {
+        base: ['Overpass']
       }
     }
   },
-  plugins: [daysiui, typography],
-  daisyui: {
-    logs: false,
-    themes: [
-      {
-        darkTheme: {
-          primary: '#131d3f',
-          secondary: '#cfd7f1',
-          'secondary-content': '#edf1ff',
-          'secondary-focus': '#1f2c55',
-          info: '#01bebe',
-          'info-content': '#02a5a5',
-          'font-size': '18px',
-          white: '#cfd7f1',
-          neutral: '#3d4451',
-          fontFamily: ['overpass']
-        },
-        ligthTheme: {
-          primary: '#ecf1f5',
-          secondary: '#39456e',
-          'secondary-content': '#131d3f',
-          'secondary-focus': '#e1e9f0',
-          info: '#01bebe',
-          'info-content': '#02a5a5',
-          'font-size': '18px',
-          white: '#cfd7f1',
-          neutral: '#3d4451',
-          fontFamily: ['overpass']
-        }
-      }
-    ]
-  }
+  plugins: [typography]
 }

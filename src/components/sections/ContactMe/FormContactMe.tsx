@@ -5,7 +5,7 @@ export function FormContactMe (): JSX.Element {
   }
 
   return (
-    <form onSubmit={sendEmail} className='text-secondary w-80 rounded-3xl border-secondary-focus shadow-xl border p-7'>
+    <form onSubmit={sendEmail} className='text-secondary w-80 rounded-3xl border-accent shadow-xl border p-7'>
       <div className='form-control mb-4'>
         <label className='label' htmlFor='name'>
           ¿Cuál es tu nombre?
