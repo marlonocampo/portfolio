@@ -2,30 +2,6 @@
 @plugin "daisyui";
 @plugin "@tailwindcss/typography";
 
-@plugin "daisyui/theme" {
-  name: "ligthTheme";
-  default: true;
-  --color-primary: #ecf1f5;
-  --color-secondary: #39456e;
-  --color-secondary-content: #131d3f;
-  --color-accent: #e1e9f0;
-  --color-info: #01bebe;
-  --color-info-content: #02a5a5;
-  --color-marlon: #01bebe;
-  --color-neutral: #3d4451;
-}
-
-@plugin "daisyui/theme" {
-  name: "darkTheme";
-  --color-primary: #131d3f;
-  --color-secondary: #cfd7f1;
-  --color-secondary-content: #edf1ff;
-  --color-accent: #1f2c55;
-  --color-info: #01bebe;
-  --color-info-content: #02a5a5;
-  --color-neutral: #3d4451;
-}
-
 @font-face {
   font-family: 'Overpass';
   src: url('/src/assets/fonts/Overpass.woff2') format('woff2');
@@ -34,16 +10,47 @@
   font-weight: 400;
 }
 
+@theme {
+  --font-sans: 'Overpass';
+}
+
+@plugin "daisyui/theme" {
+  name: "ligthTheme";
+  default: false;
+  --color-primary: #ecf1f5;
+  --color-secondary: #39456e;
+  --color-secondary-content: #131d3f;
+  --color-accent: #e1e9f0;
+  --color-info: #01bebe;
+  --color-info-content: #02a5a5;
+  --color-neutral: #3d4451;
+
+  --color-neutral1: #01bebe;
+  --color-neutral1-content: #bbbbbb;
+
+}
+
+@plugin "daisyui/theme" {
+  name: "darkTheme";
+  default: false;
+  --color-primary: #131d3f;
+  --color-secondary: #cfd7f1;
+  --color-secondary-content: #edf1ff;
+  --color-accent: #1f2c55;
+  --color-info: #01bebe;
+  --color-info-content: #02a5a5;
+  --color-neutral: #3d4451;
+
+  --color-neutral1: #01bebe;
+  --color-neutral1-content: #bbbbbb;
+}
+
 html {
   scroll-behavior: smooth;
   min-width: 400px;
   overflow: auto;
 }
 
-body {  
-  font-family: 'Overpass';
-  font-size: 18px;
-}
 .steps .step:after {
   color: white;
 }
@@ -107,8 +114,13 @@ body {
   }
 
   @keyframes slide-origin {
-    0% {opacity: 0;}
-    100% { transform: translate(0px) }
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      transform: translate(0px)
+    }
   }
 
   .slide-up {

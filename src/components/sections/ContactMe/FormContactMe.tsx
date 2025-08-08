@@ -1,11 +1,11 @@
-import { SendIcon } from '@assets/icons/SendIcons'
+import { SendIcon } from '../../Utils/components/icons/SendIcons'
 export function FormContactMe (): JSX.Element {
   const sendEmail = (event: any): void => {
     event.preventDefault()
   }
 
   return (
-    <form onSubmit={sendEmail} className='text-secondary w-80 rounded-3xl border-accent shadow-xl border p-7'>
+    <form onSubmit={sendEmail} className='text-secondary max-w-96 rounded-3xl border-accent shadow-xl border p-7'>
       <div className='form-control mb-4'>
         <label className='label' htmlFor='name'>
           ¿Cuál es tu nombre?

@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { ThemeContext } from '../../../context/ThemeContext'
-import { MessageIcon } from '@assets/icons/MessageIcon'
+import { MessageIcon } from '../../Utils/components/icons/MessageIcon'
 import { SocialMedia } from '../SocialMediaContact'
 const urlImageDark = new URL('./../../../assets/images/profileDark.webp', import.meta.url).href
 const urlImageLight = new URL('./../../../assets/images/profileLight.webp', import.meta.url).href

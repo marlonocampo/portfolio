@@ -1,5 +1,5 @@
 import { SectionsLinks } from './SectionsLinks'
-import { CloseIcon } from '@assets/icons/CloseIcon'
+import { CloseIcon } from '../Utils/components/icons/CloseIcon'
 
 interface props {
   closeSidebar: () => void

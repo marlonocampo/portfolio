@@ -4,7 +4,7 @@ import {
   DataBaseIcon,
   DataAnalysis,
   AwardIcon
-} from '@assets/icons/SkillsIcons'
+} from '../../Utils/components/icons/SkillsIcons'
 
 export const descriptionSkills =
 [{

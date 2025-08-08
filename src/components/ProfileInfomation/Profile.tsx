@@ -1,4 +1,4 @@
-import { CloseIcon } from '@assets/icons/CloseIcon'
+import { CloseIcon } from '../Utils/components/icons/CloseIcon'
 
 function Profile ({ handleShowProfile }: { handleShowProfile: Function }): JSX.Element {
   return (

@@ -1,5 +1,5 @@
 import { lazy, Suspense, useState } from 'react'
-import { UpSlideIcon } from '@assets/icons/UpSlideIcon'
+import { UpSlideIcon } from '../../Utils/components/icons/UpSlideIcon'
 import { descriptionSkills } from './descriptionSkills'
 import { Title } from '../../titles/Title'
 const DescriptionSkills = lazy(async () => await import('./ShowDescriptionSkills'))
@@ -28,13 +28,10 @@ export function Skills (): JSX.Element {
       <div className='text-secondary gridSkills gap-4 p-8'>
         {descriptionSkills.map(skill => {
           return (
-            <div
-              key={skill.key} className={`flex bg-gradient-to-br justify-center
-                                         items-center card m-3 shadow-xl p-5 border-1 border-accent`}
-            >
+            <div key={skill.key} className={'flex bg-gradient-to-br justify-center items-center card m-3 shadow-xl p-5 border-1 border-accent'}>
               <div className='m-2 w-12'>{<skill.icon />}</div>
               <span className='m-2'>{skill.name}</span>
-              <div className='tooltip tooltip-bottom' data-tip='Ver Detalles'>
+              <div className='tooltip tooltip-bottom' data-tip='Leer más'>
                 <button onClick={() => showDescriptionSkill(skill)} className='text-sm link activeEfect' aria-label='Show Description'>
                   <UpSlideIcon />
                 </button>

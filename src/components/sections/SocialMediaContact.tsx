@@ -1,4 +1,4 @@
-import { XIcon, LinkedInIcon, InstagramIcon } from '@assets/icons/SocialMediaIcons'
+import { XIcon, LinkedInIcon, InstagramIcon } from '../Utils/components/icons/SocialMediaIcons'
 import { urlContact } from '../nav/urlContact'
 export function SocialMedia (): JSX.Element {
   const { xUrl, instagramUrl, linkedInUrl } = urlContact()
