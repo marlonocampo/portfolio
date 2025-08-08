@@ -1,4 +1,4 @@
-import { CloseIcon } from '@assets/icons/CloseIcon'
+import { CloseIcon } from '../../Utils/components/icons/CloseIcon'
 import { descriptionSkills } from './descriptionSkills'
 
 interface props {
@@ -13,9 +13,9 @@ function DescriptionSkills ({ handleShowDescription, currentSkill }: props): JSX
     <div className={`z-40 fixed w-full h-full top-0 flex items-center justify-center 
                       backdrop-blur-sm bg-transparent text-secondary`}
     >
-      <p className='w-[500px] bg-primary rounded-2xl p-8 shadow-xl slide-up prose text-secondary border-3 border-accent'>
+      <article className='w-[500px] bg-primary rounded-2xl p-8 shadow-xl prose text-secondary slide-up border-3 border-accent'>
         <div className='flex justify-between'>
-          <h4 className='text-secondary'>{currentSkill.name}</h4>
+          <h4>{currentSkill.name}</h4>
           <button onClick={() => handleShowDescription()}>
             <CloseIcon />
           </button>
@@ -26,7 +26,7 @@ function DescriptionSkills ({ handleShowDescription, currentSkill }: props): JSX
             return <li key={subSkill}>{subSkill}</li>
           })}
         </ul>
-      </p>
+      </article>
     </div>
   )
 }
