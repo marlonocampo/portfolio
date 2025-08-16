@@ -9,8 +9,8 @@ export function ToggleTheme (): JSX.Element {
   return (
     <div className='tooltip tooltip-bottom' data-tip={isDark ? 'Claro' : 'Oscuro'}>
       {isDark
-        ? <IconButton onClick={changeTheme} icon={<LigthIcon />} ariaLabel={'Ligth Theme'} />
-        : <IconButton onClick={changeTheme} icon={<MoonIcon />} ariaLabel={'Dark Theme'} />}
+        ? <IconButton className={'text-secondary'} onClick={changeTheme} icon={<LigthIcon />} ariaLabel={'Ligth Theme'} />
+        : <IconButton className={'text-secondary'} onClick={changeTheme} icon={<MoonIcon />} ariaLabel={'Dark Theme'} />}
     </div>
   )
 }

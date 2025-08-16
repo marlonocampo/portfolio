@@ -1,18 +1,27 @@
-import { XIcon, LinkedInIcon, InstagramIcon } from '../Utils/components/icons/SocialMediaIcons'
+import { LinkedInIcon, InstagramIcon } from '../Utils/components/icons/SocialMediaIcons'
 import { urlContact } from '../nav/urlContact'
-export function SocialMedia (): JSX.Element {
-  const { xUrl, instagramUrl, linkedInUrl } = urlContact()
+import { AnchorIcon } from '../Utils/AnchorIcon'
 
+export function SocialMedia (): JSX.Element {
+  const { instagramUrl, linkedInUrl } = urlContact()
   return (
-    <div className='flex justify-center grow-0 w-full mt-5'>
-      <div className='tooltip tooltip-bottom' data-tip='X'>
-        <a href={xUrl} aria-label='X' target='_blank' className='btn btn-ghost btn-circle text-secondary' rel='noreferrer'><XIcon /></a>
-      </div>
-      <div className='tooltip tooltip-bottom text-secondary' data-tip='LinkedIn'>
-        <a href={linkedInUrl} aria-label='LinkedIn' target='_blank' className='btn btn-ghost btn-circle' rel='noreferrer'><LinkedInIcon /></a>
-      </div>
+    <div className='flex justify-center grow-0 w-full mt-5 gap-1'>
       <div className='tooltip tooltip-bottom text-secondary' data-tip='Instagram'>
-        <a href={instagramUrl} aria-label='Instagram' target='_blank' className='btn btn-ghost btn-circle' rel='noreferrer'><InstagramIcon /></a>
+        <AnchorIcon
+          className={'text-secondary'}
+          icon={<InstagramIcon />}
+          url={instagramUrl}
+          ariaLabel='instagram profile'
+        />
+      </div>
+
+      <div className='tooltip tooltip-bottom text-secondary' data-tip='LinkedIn'>
+        <AnchorIcon
+          className={'text-secondary'}
+          icon={<LinkedInIcon />}
+          url={linkedInUrl}
+          ariaLabel='LinkedIn profile'
+        />
       </div>
     </div>
   )
