@@ -8,7 +8,7 @@
     "start": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint src/**",
+    "lint": "eslint src --ext .tsx",
     "test": "vitest"
   },
   "dependencies": {
