@@ -10,7 +10,7 @@ export function Footer (): JSX.Element {
         <p className='font-bold'>
           marlonocampo.com <br />Marlon José Ocampo
         </p>
-        <p>Copyright © 2024 - All right reserved</p>
+        <p>Copyright © 2025 - All right reserved</p>
       </aside>
     </footer>
   )
