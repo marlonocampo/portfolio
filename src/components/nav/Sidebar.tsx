@@ -1,5 +1,6 @@
 import { SectionsLinks } from './SectionsLinks'
-import { CloseIcon } from '../Utils/components/icons/CloseIcon'
+import { IconButton } from '../Utils/components/IconButton'
+import { CloseSidebarIcon } from '../Utils/components/icons/CloseSidebarIcon'
 
 interface props {
   closeSidebar: () => void
@@ -17,9 +18,12 @@ export function Sidebar ({ closeSidebar, isOpen }: props): JSX.Element {
       <div className={`${isOpen ? 'translate-x-0' : '-translate-x-full'} p-4 w-64 h-full bg-primary border-r shadow-xlrounded-r-2xl border-r-accent`}>
         <div className='flex text-secondary items-center justify-between mt-2 mb-16 pl-4'>
           <a href='#' className=''>marlonocampo</a>
-          <button className='activeEfect' onClick={() => closeSidebar()} aria-label='Close Sidebar'>
-            <CloseIcon />
-          </button>
+          <IconButton
+            icon={<CloseSidebarIcon />}
+            className='activeEfect text-secondary'
+            onClick={() => closeSidebar()}
+            ariaLabel='Close Sidebar'
+          />
         </div>
         <ul className='flex gap-5 flex-col'>
           {SectionsLinks.map(link => {

@@ -1,5 +1,6 @@
 import { CloseIcon } from '../../Utils/components/icons/CloseIcon'
 import { descriptionSkills } from './descriptionSkills'
+import { IconButton } from '../../Utils/components/IconButton'
 
 interface props {
   handleShowDescription: Function
@@ -15,10 +16,13 @@ function DescriptionSkills ({ handleShowDescription, currentSkill }: props): JSX
     >
       <article className='w-[500px] bg-primary rounded-2xl p-8 shadow-xl prose text-secondary slide-up border-3 border-accent'>
         <div className='flex justify-between'>
-          <h4>{currentSkill.name}</h4>
-          <button onClick={() => handleShowDescription()}>
-            <CloseIcon />
-          </button>
+          <h4 className={'text-secondary'}>{currentSkill.name}</h4>
+          <IconButton
+            icon={<CloseIcon />}
+            onClick={() => handleShowDescription()}
+            className={'text-secondary'}
+            ariaLabel={'close icon'}
+          />
         </div>
         <p className='m-3'> {description} </p>
         <ul>

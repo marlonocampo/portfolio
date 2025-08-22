@@ -145,15 +145,26 @@ html {
     }
   }
 
+}
+
+@layer base {
   ::-webkit-scrollbar {
-    width: 5px;
-    height: 7px;
-    background-color: #131d3f;
+    width: 20px;
+    height: 20px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #f7f4ed;
   }
 
   ::-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    background-color: #66769b;
+    background: #e0cbcb;
+    border-radius: 100vh;
+    border: 3px solid #f6f7ed;
   }
 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c0a0b9;
+  }
 }

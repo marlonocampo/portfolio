@@ -1,4 +1,5 @@
 import { CloseIcon } from '../Utils/components/icons/CloseIcon'
+import { IconButton } from '../Utils/components/IconButton'
 
 function Profile ({ handleShowProfile }: { handleShowProfile: Function }): JSX.Element {
   return (
@@ -8,9 +9,12 @@ function Profile ({ handleShowProfile }: { handleShowProfile: Function }): JSX.E
     >
       <div className='flex flex-col bg-primary right-4 top-16 zoom-effect shadow-2xl fixed z-40 justify-center border-accent border-2 rounded-xl xl:right-32'>
         <div className='flex justify-end text-secondary p-2'>
-          <button onClick={() => handleShowProfile()}>
-            <CloseIcon />
-          </button>
+          <IconButton
+            icon={<CloseIcon />}
+            className={'text-secondary'}
+            onClick={() => handleShowProfile()}
+            ariaLabel={'Close'}
+          />
         </div>
         <div className='flex flex-col items-center justify-center prose text-secondary px-8 pb-8'>
           <h3 className='text-secondary my-5'>Marlon José Ocampo Pérez</h3>

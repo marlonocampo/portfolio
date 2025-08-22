@@ -1,5 +1,5 @@
 interface Props {
-  className: string
+  className?: string
   icon: JSX.Element
   onClick: () => void
   ariaLabel: string

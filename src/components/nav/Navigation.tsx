@@ -7,6 +7,7 @@ import { LogoMarlonOcampo } from '../LogoMarlonocampo/LogoMarlonOcampo'
 import { Sidebar } from './Sidebar'
 import { urlContact } from './urlContact'
 import { AnchorIcon } from '../Utils/AnchorIcon'
+import { IconButton } from '../Utils/components/IconButton'
 
 const Profile = lazy(async () => await import('../ProfileInfomation/Profile'))
 
@@ -28,13 +29,12 @@ export function Navigation (): JSX.Element {
     <>
       <nav className={'text-secondary navbar fixed bg-transparent backdrop-blur-2xl z-20 justify-between md:px-8 xl:px-72'}>
         <div className='flex justify-center content-center items-center'>
-          <button
-            className='md:hidden btn btn-ghost btn-circle'
-            aria-label='Open Sidebar'
+          <IconButton
+            icon={<MenuIcon />}
+            className='md:hidden text-secondary'
+            ariaLabel='Open Sidebar'
             onClick={handleOpenSidebar}
-          >
-            <MenuIcon />
-          </button>
+          />
           <div className='tooltip tooltip-bottom w-5 m-2 activeEfect' data-tip='marlonocampo'>
             <a href='#presentation' aria-label='marlonocampo'>
               <LogoMarlonOcampo />
@@ -48,7 +48,7 @@ export function Navigation (): JSX.Element {
         </div>
         <div className='flex items-center gap-1'>
           <div className='tooltip tooltip-bottom' data-tip='Perfil de GitHub'>
-            <AnchorIcon icon={<GitHubIcon />} url={githubUrl} ariaLabel={'GitHub profile'} />
+            <AnchorIcon icon={<GitHubIcon />} url={githubUrl} ariaLabel={'GitHub profile'} className={'text-secondary'} />
           </div>
           <ToggleTheme />
           <div className='tooltip tooltip-bottom' data-tip='Perfil'>

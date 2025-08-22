@@ -14,7 +14,7 @@ export function App (): JSX.Element {
   const { isDark } = useContext(ThemeContext)
 
   return (
-    <main data-theme={`${isDark ? 'darkTheme' : 'ligthTheme'}`} className='bg-primary scrollbarDark'>
+    <main data-theme={`${isDark ? 'darkTheme' : 'ligthTheme'}`} className='bg-primary scrollbar'>
       {isProduction() && <EnvirontmentTag />}
       <Navigation />
       <Presentation />
